@@ -1,0 +1,7 @@
+info:
+  name: SR_SiteStatus
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

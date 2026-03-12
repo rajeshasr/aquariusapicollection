@@ -1,0 +1,68 @@
+info:
+  name: updateuser
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/updateuser"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 11042,\r
+
+      \    \"unitId\": 13,\r
+
+      \    \"firstName\": \"Rajesh\",\r
+
+      \    \"lastName\": \"Gupta\",\r
+
+      \    \"nickName\": \"Gupta\",\r
+
+      \    \"companyName\": \"Genesis Techno Soft\",\r
+
+      \    \"dOB\": \"2025-01-01\",\r
+
+      \    \"cellPhone\": \"CellPhone\",\r
+
+      \    \"homePhone\": \"HomePhone\",\r
+
+      \    \"workPhone\": \"WorkPhone\",\r
+
+      \    \"email1\": \"test33@gmail.com\",\r
+
+      \    \"email2\": \"Email2\",\r
+
+      \    \"emergencyAssistReqd\": true,\r
+
+      \    // \"userName\": \"security1\",\r
+
+      \    \"offsiteAddress1\": \"OffsiteAddress1\",\r
+
+      \    \"offsiteAddress2\": \"OffsiteAddress2\",\r
+
+      \    \"offsiteCity\": \"OffsiteCity\",\r
+
+      \    \"offsiteCountryId\": 1,\r
+
+      \    \"offsiteProvinceId\": 7,\r
+
+      \    \"offsiteProvinceName\": null,\r
+
+      \    \"offsitePostalCode\": \"OffsitePostalCode\",\r
+
+      \    \"userSites\": [ 1003],\r
+
+      \    \"roleType\": \"Staff\",\r
+
+      \    \"userRoles\": [17]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

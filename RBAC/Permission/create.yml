@@ -1,0 +1,54 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/permission/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"moduleId\": 1,\r
+
+      \    \"permission\": \"Test 1\",\r
+
+      \    \"permDesc\": \" Test 1 Details\",\r
+
+      \    \"assignToSoftwareAdmin\": true,\r
+
+      \    \"assignToSuperAdmin\": true,\r
+
+      \    \"assignToManagementAdmin\": true,\r
+
+      \    \"assignToSiteAdmin\": true,\r
+
+      \    \"assignToStaff\": true,\r
+
+      \    \"assignToResidents\": true,\r
+
+      \    \"Apis\": [\r
+
+      \        {\r
+
+      \            \"apiId\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"apiId\": 2\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

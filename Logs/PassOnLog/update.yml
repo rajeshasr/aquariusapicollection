@@ -1,0 +1,47 @@
+info:
+  name: update
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/passonlog/update"
+  body:
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "1"
+      - name: RelatedUnitId
+        type: text
+        value: "1"
+      - name: Title
+        type: text
+        value: Title New 111
+      - name: Details
+        type: text
+        value: Content New 111
+      - name: IsInternal
+        type: text
+        value: "false"
+      - name: IsHighPriority
+        type: text
+        value: "false"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/offer-2.png
+          - /C:/Users/Genesis/Pictures/offer-3.png
+      - name: ReviewerUserIds
+        type: text
+        value: "10001"
+      - name: ReviewerUserIds
+        type: text
+        value: "10003"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

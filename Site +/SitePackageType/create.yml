@@ -1,0 +1,26 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitepackagetype/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"packageType\": \"Spot 6\",\r
+
+      \    \"colorCode\": \"#F3F3F3\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,49 @@
+info:
+  name: create
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/advertisement/create"
+  body:
+    type: multipart-form
+    data:
+      - name: userId
+        type: text
+        value: "10001"
+      - name: siteId
+        type: text
+        value: "1001"
+      - name: advtCatId
+        type: text
+        value: "1"
+      - name: title
+        type: text
+        value: Title 1
+      - name: content
+        type: text
+        value: Content 1
+      - name: contactInfo
+        type: text
+        value: ContactInfo 1
+      - name: price
+        type: text
+        value: Price 1
+      - name: expiryDate
+        type: text
+        value: ""
+      - name: approved
+        type: text
+        value: "false"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/1.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

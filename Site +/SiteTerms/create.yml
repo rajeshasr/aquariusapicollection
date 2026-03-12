@@ -1,0 +1,30 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/siteterms/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"SiteId\": 1001,\r
+
+      \    \"ModuleName\": null,\r
+
+      \    \"Title\": \"Test 1 Title\",\r
+
+      \    \"Content\": \"Test 1 Desc\",\r
+
+      \    \"CreatedBy\": 10001\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

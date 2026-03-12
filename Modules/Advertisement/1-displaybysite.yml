@@ -1,0 +1,28 @@
+info:
+  name: 1-displaybysite
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/advertisement/displaybysite"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"SiteId\": 1001,\r
+
+      \    \"DateRangeId\": 2,\r
+
+      \    \"CustomStartDate\": null,\r
+
+      \    \"CustomEndDate\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

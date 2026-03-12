@@ -1,0 +1,84 @@
+info:
+  name: 1-createbulk
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/package/createbulk"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"tempID\": 101,\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"incoming\": true,\r
+
+      \        \"recipientUserId\": 10001,\r
+
+      \        \"droppedByUserId\": null,\r
+
+      \        \"recipientName\": \"Test Name 1\",\r
+
+      \        \"courierId\": 12,\r
+
+      \        \"courierOthers\": \"\",\r
+
+      \        \"packageTypeId\": 1,\r
+
+      \        \"packageTypeOthers\": \"\",\r
+
+      \        \"trackingNo\": \"112\",\r
+
+      \        \"packageSpotId\": 5,\r
+
+      \        \"isPerishable\": false,\r
+
+      \        \"packageDetails\": \"test\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"tempID\": 102,\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"incoming\": true,\r
+
+      \        \"recipientUserId\": 10002,\r
+
+      \        \"droppedByUserId\": null,\r
+
+      \        \"recipientName\": \"Test Name 2\",\r
+
+      \        \"courierId\": 12,\r
+
+      \        \"courierOthers\": \"\",\r
+
+      \        \"packageTypeId\": 1,\r
+
+      \        \"packageTypeOthers\": \"\",\r
+
+      \        \"trackingNo\": \"112\",\r
+
+      \        \"packageSpotId\": 5,\r
+
+      \        \"isPerishable\": false,\r
+
+      \        \"packageDetails\": \"test\"\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

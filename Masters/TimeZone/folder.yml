@@ -1,0 +1,7 @@
+info:
+  name: TimeZone
+  type: folder
+  seq: 12
+
+request:
+  auth: inherit

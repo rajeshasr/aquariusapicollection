@@ -1,0 +1,32 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/buzzer/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 8,\r
+
+      \    \"unitId\": 2,\r
+
+      \    \"buzzerTypeId\": 1,\r
+
+      \    \"buzzerCode\": \"4\",\r
+
+      \    \"description\": \"Test Desc 1\",\r
+
+      \    \"userId\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

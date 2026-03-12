@@ -1,0 +1,88 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/vendor/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"SiteID\": 1002,\r
+
+      \    \"CompanyName\": \"Test 8\",\r
+
+      \    \"Address1\": \"Address1\",\r
+
+      \    \"Address2\": \"Address2\",\r
+
+      \    \"City\": \"City\",\r
+
+      \    \"CountryId\": 1,\r
+
+      \    \"ProvinceId\": 1,\r
+
+      \    \"ProvinceName\": \"ProvinceName\",\r
+
+      \    \"PostalCode\": \"PostalCode\",\r
+
+      \    \"Phone\": \"1234\",\r
+
+      \    \"Email\": \"Email\",\r
+
+      \    \"Website\": \"Website\",\r
+
+      \    \"HourOfOperation\": \"HourOfOperation\",\r
+
+      \    \"AboutUs\": \"AboutUs\",\r
+
+      \    \"AssignServiceRequest\": true,\r
+
+      \    \"VendorCategories\": [1, 2],\r
+
+      \    \"VendorContact\": [\r
+
+      \        {\r
+
+      \            \"FirstName\": \"John\",\r
+
+      \            \"LastName\": \"Doe\",\r
+
+      \            \"HomePhone\": \"111111\",\r
+
+      \            \"WorkPhone\": \"222222\",\r
+
+      \            \"CellPhone\": \"999999\",\r
+
+      \            \"Email\": \"john@test.com\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"FirstName\": \"Jane\",\r
+
+      \            \"LastName\": \"Smith\",\r
+
+      \            \"HomePhone\": \"111111\",\r
+
+      \            \"WorkPhone\": \"222222\",\r
+
+      \            \"CellPhone\": \"888888\",\r
+
+      \            \"Email\": \"jane@test.com\"\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

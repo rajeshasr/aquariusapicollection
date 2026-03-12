@@ -1,0 +1,18 @@
+info:
+  name: displaybysite
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/module/displaybysite"
+  body:
+    type: json
+    data: "{\r\n    \"siteId\": 1007\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

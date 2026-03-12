@@ -1,0 +1,29 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/incidentlogupdate/update"
+  body:
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "1"
+      - name: CommentText
+        type: text
+        value: Title 1133
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/offer-2.png
+          - /C:/Users/Genesis/Pictures/offer-3.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

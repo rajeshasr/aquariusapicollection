@@ -1,0 +1,32 @@
+info:
+  name: createcustom
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/role/createcustom"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"roleName\": \"Condo Manager\",\r
+
+      \    \"roleDesc\": \"Test Desc 1\",\r
+
+      \    \"roleTypeId\": 7,\r
+
+      \    // \"managementId\": 1,\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"permissionGroupIds\": [1,2,3,4,5]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

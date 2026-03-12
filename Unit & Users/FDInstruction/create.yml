@@ -1,0 +1,30 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/fdinstruction/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"unitId\": 2,\r
+
+      \    \"fdInstructionTypeId\": 2,\r
+
+      \    \"instructionText\": \"Do not issue make mess.\",\r
+
+      \    \"startDate\": \"2025-02-05\",\r
+
+      \    \"expiryDate\": \"2025-02-15\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

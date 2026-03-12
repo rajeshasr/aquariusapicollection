@@ -1,0 +1,42 @@
+info:
+  name: searchbysite
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/shiftlog/searchbysite"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"unitId\": null,\r
+
+      \    \"startDate\": null,\r
+
+      \    \"endDate\": null,\r
+
+      \    \"shiftNote\": null,\r
+
+      \    \"isHighPriority\": false,\r
+
+      \    \"createdBy\": null,\r
+
+      \    \"paging\": {\r
+
+      \        \"page\": 1,\r
+
+      \        \"perPage\": 5\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

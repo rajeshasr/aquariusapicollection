@@ -1,0 +1,34 @@
+info:
+  name: updatecontact
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/vendor/updatecontact"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Id\": 2004,\r
+
+      \    \"FirstName\": \"John1\",\r
+
+      \    \"LastName\": \"Doe1\",\r
+
+      \    \"HomePhone\": \"111\",\r
+
+      \    \"WorkPhone\": \"222\",\r
+
+      \    \"CellPhone\": \"999\",\r
+
+      \    \"Email\": \"jane@test.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

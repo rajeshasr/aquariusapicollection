@@ -1,0 +1,7 @@
+info:
+  name: Locker
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit

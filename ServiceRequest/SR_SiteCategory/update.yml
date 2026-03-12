@@ -1,0 +1,28 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/sitecategory/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 1,\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"CatName\": \"Test 11\",\r
+
+      \    \"ColorCode\": \"#FF0000\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

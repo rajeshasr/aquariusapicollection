@@ -1,0 +1,40 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/generallog/create"
+  body:
+    type: multipart-form
+    data:
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: RelatedUnitId
+        type: text
+        value: "1"
+      - name: EventDT
+        type: text
+        value: 2026-02-10
+      - name: Title
+        type: text
+        value: "Title New "
+      - name: Details
+        type: text
+        value: Resident from Block B, Flat 204 reported water leakage from the ceiling in the kitchen area. Maintenance team has been informed and plumber assigned to inspect the issue. Temporary bucket placed to control water dripping. Follow-up required after repair completion.
+      - name: IsMultipleSites
+        type: text
+        value: "false"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/offer-1.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

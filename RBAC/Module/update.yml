@@ -1,0 +1,38 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/module/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 13,\r
+
+      \    \"moduleName\": \"Test 11\",\r
+
+      \    \"moduleDesc\": \" Test 11 Details\",\r
+
+      \    \"assignToSoftwareAdmin\": true,\r
+
+      \    \"assignToSuperAdmin\": true,\r
+
+      \    \"assignToManagementAdmin\": true,\r
+
+      \    \"assignToSiteAdmin\": true,\r
+
+      \    \"assignToStaff\": true,\r
+
+      \    \"assignToResidents\": false\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

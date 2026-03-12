@@ -1,0 +1,26 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/timezone/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"timeZoneName\": \"Test 2\",\r
+
+      \    \"displayName\": \"Test Desc 2\",\r
+
+      \    \"uTCOffset\": \"+5:00\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

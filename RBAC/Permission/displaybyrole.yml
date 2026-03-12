@@ -1,0 +1,18 @@
+info:
+  name: displaybyrole
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/permission/displaybyrole"
+  body:
+    type: json
+    data: "{\r\n    \"roleId\": 4\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

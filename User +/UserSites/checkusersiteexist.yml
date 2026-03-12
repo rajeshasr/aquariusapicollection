@@ -1,0 +1,24 @@
+info:
+  name: checkusersiteexist
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/usersites/checkusersiteexist"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"userId\": 10001,\r
+
+      \    \"siteId\": 1004\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

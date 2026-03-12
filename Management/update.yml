@@ -1,0 +1,40 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/management/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 4,\r
+
+      \    \"managementName\": \"Test Management 44\",\r
+
+      \    \"address1\": \"Address 1\",\r
+
+      \    \"address2\": \"Address 2\",\r
+
+      \    \"city\": \"City\",\r
+
+      \    \"countryId\": 1,\r
+
+      \    \"provinceId\": 1,\r
+
+      \    \"provinceName\": null,\r
+
+      \    \"postalCode\": \"111111\",\r
+
+      \    \"website\": \"https://website.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

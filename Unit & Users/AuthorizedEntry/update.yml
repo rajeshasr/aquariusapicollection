@@ -1,0 +1,49 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/authorizedentry/update"
+  body:
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "4"
+      - name: unitId
+        type: text
+        value: "2"
+      - name: grantedByUserId
+        type: text
+        value: "10005"
+      - name: authCatId
+        type: text
+        value: "1"
+      - name: authPersonName
+        type: text
+        value: Test 55
+      - name: phone
+        type: text
+        value: "1111"
+      - name: startDate
+        type: text
+        value: 2026-02-01
+      - name: expiryDate
+        type: text
+        value: 2026-03-01
+      - name: instructionText
+        type: text
+        value: Test Comments
+      - name: photoFile
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/1.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

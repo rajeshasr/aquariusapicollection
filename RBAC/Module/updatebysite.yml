@@ -1,0 +1,140 @@
+info:
+  name: updatebysite
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/module/updatebysite"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 1,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 2,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 3,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 4,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 5,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 6,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 7,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 8,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 9,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 10,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 11,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"siteId\": 1001,\r
+
+      \        \"moduleId\": 12,\r
+
+      \        \"granted\": true\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/incidentstatus/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"incidentStatus\": \"Test 1\",\r
+
+      \    \"colorCode\": \"#FF0000\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

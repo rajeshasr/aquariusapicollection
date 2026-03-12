@@ -1,0 +1,7 @@
+info:
+  name: SR_SiteCategory
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

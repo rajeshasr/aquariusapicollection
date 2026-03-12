@@ -1,0 +1,37 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/userlease/create"
+  body:
+    type: multipart-form
+    data:
+      - name: userId
+        type: text
+        value: "10001"
+      - name: startDate
+        type: text
+        value: 2025-09-15
+      - name: endDate
+        type: text
+        value: 2026-09-14
+      - name: leaseAmount
+        type: text
+        value: "10000"
+      - name: comments
+        type: text
+        value: Test File 1
+      - name: attachmentFile
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/1.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

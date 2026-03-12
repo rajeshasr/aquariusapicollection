@@ -1,0 +1,24 @@
+info:
+  name: displaybyuser
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/library/libraryfolder/displaybyuser"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"userId\": 10004,\r
+
+      \    \"siteId\": 1001\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

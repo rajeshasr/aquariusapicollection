@@ -1,0 +1,18 @@
+info:
+  name: displaybyuserid
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/userlease/displaybyuserid"
+  body:
+    type: json
+    data: "{\r\n    \"userId\": 10008\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

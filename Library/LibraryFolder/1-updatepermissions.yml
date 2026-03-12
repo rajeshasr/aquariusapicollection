@@ -1,0 +1,70 @@
+info:
+  name: 1-updatepermissions
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/library/libraryfolder/updatepermissions"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"FolderId\": 1,\r
+
+      \        \"RoleId\": 5,\r
+
+      \        \"AccessLevelId\": 4\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"FolderId\": 1,\r
+
+      \        \"RoleId\": 8,\r
+
+      \        \"AccessLevelId\": 3\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"FolderId\": 1,\r
+
+      \        \"RoleId\": 9,\r
+
+      \        \"AccessLevelId\": 2\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"FolderId\": 1,\r
+
+      \        \"RoleId\": 10,\r
+
+      \        \"AccessLevelId\": 1\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"FolderId\": 1,\r
+
+      \        \"RoleId\": 11,\r
+
+      \        \"AccessLevelId\": 1\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

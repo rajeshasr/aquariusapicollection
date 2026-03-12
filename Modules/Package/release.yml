@@ -1,0 +1,30 @@
+info:
+  name: release
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/package/release"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 25,\r
+
+      \    \"recievedByUserId\": 10001,\r
+
+      \    \"recievedByOthers\": \"Test Name\",\r
+
+      \    \"idTypeId\": 1,\r
+
+      \    \"idNumber\": \"111\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

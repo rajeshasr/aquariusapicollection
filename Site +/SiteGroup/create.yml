@@ -1,0 +1,44 @@
+info:
+  name: create
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitegroup/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1002,\r
+
+      \    \"groupName\": \"Floor 1\",\r
+
+      \    \"groupDesc\": \"Residents of 1st Floor\",\r
+
+      \    \"groupType\": \"Residents\",\r
+
+      \    \"users\": [\r
+
+      \        {\r
+
+      \            \"userId\": 10001\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"userId\": 10002\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,56 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/permission/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 9,\r
+
+      \    \"moduleId\": 2,\r
+
+      \    \"permission\": \"Test 12\",\r
+
+      \    \"permDesc\": \" Test 12 Details\",\r
+
+      \    \"assignToSoftwareAdmin\": true,\r
+
+      \    \"assignToSuperAdmin\": true,\r
+
+      \    \"assignToManagementAdmin\": true,\r
+
+      \    \"assignToSiteAdmin\": true,\r
+
+      \    \"assignToStaff\": true,\r
+
+      \    \"assignToResidents\": true,\r
+
+      \    \"Apis\": [\r
+
+      \        {\r
+
+      \            \"apiId\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"apiId\": 3\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

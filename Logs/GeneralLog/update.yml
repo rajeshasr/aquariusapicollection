@@ -1,0 +1,43 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/generallog/update"
+  body:
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "1"
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: RelatedUnitId
+        type: text
+        value: "1"
+      - name: EventDT
+        type: text
+        value: 2026-02-11
+      - name: Title
+        type: text
+        value: Title New 1
+      - name: Details
+        type: text
+        value: Content Newv 1
+      - name: IsMultipleSites
+        type: text
+        value: "false"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/offer-2.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

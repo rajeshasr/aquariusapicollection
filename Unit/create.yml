@@ -1,0 +1,48 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/unit/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1003,\r
+
+      \    \"UnitNo\": \"103\",\r
+
+      \    \"UnitDesc\": \"Unit 103\",\r
+
+      \    \"OwnerTypeId\": 1,\r
+
+      \    \"SaleDate\": null,\r
+
+      \    \"OccupancyDate\": null,\r
+
+      \    \"MoveInDate\": \"2025-06-01\",\r
+
+      \    \"address1\": \"Address 1\",\r
+
+      \    \"address2\": \"Address 2\",\r
+
+      \    \"city\": \"City\",\r
+
+      \    \"countryId\": 1,\r
+
+      \    \"provinceId\": 6,\r
+
+      \    \"provinceName\": null,\r
+
+      \    \"postalCode\": \"222222\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

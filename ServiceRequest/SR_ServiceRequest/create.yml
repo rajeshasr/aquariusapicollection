@@ -1,0 +1,46 @@
+info:
+  name: create
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/servicerequest/create"
+  body:
+    type: multipart-form
+    data:
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: UserId
+        type: text
+        value: "10002"
+      - name: CatId
+        type: text
+        value: "1"
+      - name: Title
+        type: text
+        value: "Title New "
+      - name: Content
+        type: text
+        value: Content New
+      - name: IsHighPriority
+        type: text
+        value: "false"
+      - name: AuthorizedEntry
+        type: text
+        value: "false"
+      - name: ShowToResident
+        type: text
+        value: "true"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/1.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

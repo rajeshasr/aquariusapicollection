@@ -1,0 +1,22 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/notification/notimodule/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"moduleName\": \"Test 1\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

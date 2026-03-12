@@ -1,0 +1,26 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/projecttheme/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"themeName\": \"Test Theme\",\r
+
+      \    \"themeJson\": \"{ \\\"background\\\": \\\"#000\\\", \\\"text\\\": \\\"#fff\\\" }\",\r
+
+      \    \"primaryColor\": \"#FF0000\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

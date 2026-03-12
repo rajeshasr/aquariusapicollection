@@ -1,0 +1,32 @@
+info:
+  name: searchunitsbysite
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/search/searchunitsbysite"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1002,\r
+
+      \    \"search\": \"rajesh\",\r
+
+      \        \"paging\": {\r
+
+      \        \"page\": 1,\r
+
+      \        \"perPage\": 5\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

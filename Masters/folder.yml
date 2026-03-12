@@ -1,0 +1,7 @@
+info:
+  name: Masters
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

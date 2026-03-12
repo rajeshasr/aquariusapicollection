@@ -1,0 +1,28 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/timezone/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 90,\r
+
+      \    \"timeZoneName\": \"Test 22\",\r
+
+      \    \"displayName\": \"Test Desc 22\",\r
+
+      \    \"uTCOffset\": \"+5:00\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

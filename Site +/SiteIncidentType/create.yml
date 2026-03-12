@@ -1,0 +1,26 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/siteincidenttype/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"incidentType\": \"Spot 4\",\r
+
+      \    \"colorCode\": \"#FF0000\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,42 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/vehicle/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 7,\r
+
+      \    \"unitId\": 2,\r
+
+      \    \"vehicleMakeId\": 2,\r
+
+      \    \"model\": \"3456\",\r
+
+      \    \"vehicleColorId\": 2,\r
+
+      \    \"licensePlateNo\": \"1111\",\r
+
+      \    \"countryId\": 1,\r
+
+      \    \"provinceId\":  5,\r
+
+      \    \"provinceName\": null,\r
+
+      \    \"userId\": null,\r
+
+      \    \"parkingId\": 5\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

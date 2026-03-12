@@ -1,0 +1,28 @@
+info:
+  name: displaysummary
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/advertisement/displaysummary"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"SiteId\": 1001,\r
+
+      \  \"DateRangeId\": 9,\r
+
+      \  \"CustomStartDate\": \"2025-01-01\",\r
+
+      \  \"CustomEndDate\": \"2025-11-01\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

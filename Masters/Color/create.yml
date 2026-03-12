@@ -1,0 +1,24 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/color/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"colorName\": \"Blue\",\r
+
+      \    \"colorCode\": \"#0000FF\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

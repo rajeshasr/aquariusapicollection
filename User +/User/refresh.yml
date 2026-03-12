@@ -1,0 +1,32 @@
+info:
+  name: refresh
+  type: http
+  seq: 21
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/refresh"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"deviceId\": \"1234\",\r
+
+      \    \"refreshToken\": \"Mhn1rbLQp9Lm11jUmYrPQGgffirTGIk4I_GcCMrLBswgSBZp8wOY3umhTS_qjeSXZ3as8DQZWM5F1TjAQHQNYw\"\r
+
+      }"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "// Stores the accessToken in an environment or global variable\r
+
+        var accessToken = res.getBody().data.accessToken;\r
+
+        bru.setVar(\"accessToken\", accessToken);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

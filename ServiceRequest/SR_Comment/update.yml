@@ -1,0 +1,31 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/comment/update"
+  body:
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "9"
+      - name: CommentText
+        type: text
+        value: Title 1133
+      - name: IsInternal
+        type: text
+        value: "false"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/jacket.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

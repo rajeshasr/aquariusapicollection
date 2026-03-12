@@ -1,0 +1,26 @@
+info:
+  name: displaybysite
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/package/displaybysite"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"incoming\": null,\r
+
+      \    \"released\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: recalled
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/servicerequest/updatestatus"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Id\": 2002,\r
+
+      \    \"StatusId\": 2\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

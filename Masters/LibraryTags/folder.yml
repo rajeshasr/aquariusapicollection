@@ -1,0 +1,7 @@
+info:
+  name: LibraryTags
+  type: folder
+  seq: 21
+
+request:
+  auth: inherit

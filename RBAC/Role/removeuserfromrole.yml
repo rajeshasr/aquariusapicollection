@@ -1,0 +1,24 @@
+info:
+  name: removeuserfromrole
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/role/removeuserfromrole"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"roleId\": 11,\r
+
+      \    \"userId\": 10003\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

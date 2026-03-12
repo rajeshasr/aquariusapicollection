@@ -1,0 +1,42 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/library/libraryfiles/update"
+  body:
+    type: multipart-form
+    data:
+      - name: id
+        type: text
+        value: "12"
+      - name: fileName
+        type: text
+        value: Test File 111
+      - name: fileDesc
+        type: text
+        value: Test Descip
+      - name: fileURL
+        type: file
+        value: []
+      - name: fileWebURL
+        type: text
+        value: ""
+      - name: tags
+        type: text
+        value: ""
+      - name: expiryDate
+        type: text
+        value: ""
+      - name: updatedBy
+        type: text
+        value: "10001"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

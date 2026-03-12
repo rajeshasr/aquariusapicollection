@@ -1,0 +1,18 @@
+info:
+  name: displaybyid
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/generallog/displaybyid"
+  body:
+    type: json
+    data: "{\r\n    \"Id\": 1\r\n    \r\n\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

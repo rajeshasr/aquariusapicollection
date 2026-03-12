@@ -1,0 +1,44 @@
+info:
+  name: updatepriority
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/projecttheme/updatepriority"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"id\":1,\r
+
+      \        \"priority\": 1\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"id\":2,\r
+
+      \        \"priority\": 2\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"id\":3,\r
+
+      \        \"priority\": 3\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

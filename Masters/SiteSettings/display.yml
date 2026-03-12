@@ -1,0 +1,18 @@
+info:
+  name: display
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/sitesettings/display"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

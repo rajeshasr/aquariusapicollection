@@ -1,0 +1,7 @@
+info:
+  name: IncidentStatus
+  type: folder
+  seq: 19
+
+request:
+  auth: inherit

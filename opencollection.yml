@@ -1,0 +1,36 @@
+opencollection: 1.0.0
+
+info:
+  name: AquariusAPI
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: X-Site-Id
+      value: "1001"
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+  variables:
+    - name: accessToken
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IiIsImVtYWlsIjoiIiwianRpIjoiNzQ0NTRlOTctMjU4OC00ZGU2LWFiMTMtNjAwYjZjMjEzNDQyIiwicm9sZWlkIjoiMiIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQWRtaW4iLCJleHAiOjE3NDc4MjI5NDIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTA4MCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTA4MCJ9.M6g1WHehTfsRlPY_nCUloxjJ7hV1RVDbiXfzZW9NMEA
+    - name: url1
+      value: http://localhost:5212
+    - name: url
+      value: http://localhost:5212
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

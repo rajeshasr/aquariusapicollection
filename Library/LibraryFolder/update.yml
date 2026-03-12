@@ -1,0 +1,38 @@
+info:
+  name: update
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/library/libraryfolder/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 7,\r
+
+      \    \"folderName\": \"Folder A\",\r
+
+      \    \"folderDesc\": \"Folder Desc A\",\r
+
+      \     \"permissions\": [\r
+
+      \        {\r
+
+      \            \"RoleId\": 5,\r
+
+      \            \"AccessLevelId\": 4\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

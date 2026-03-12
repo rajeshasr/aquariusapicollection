@@ -1,0 +1,30 @@
+info:
+  name: create
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/buzzer/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"unitId\": 2,\r
+
+      \    \"buzzerTypeId\": 1,\r
+
+      \    \"buzzerCode\": \"444\",\r
+
+      \    \"description\": \"Test Desc\",\r
+
+      \    \"userId\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

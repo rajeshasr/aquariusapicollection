@@ -1,0 +1,28 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/notificationevent/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 8,\r
+
+      \    \"moduleId\": 2,\r
+
+      \    \"notificationEvent\": \"Test 22\",\r
+
+      \    \"description\": \"Desc 22\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,42 @@
+info:
+  name: update
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/servicerequest/update"
+  body:
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "2002"
+      - name: CatId
+        type: text
+        value: "3"
+      - name: Title
+        type: text
+        value: Title 1122
+      - name: Content
+        type: text
+        value: Content 112222777
+      - name: IsHighPriority
+        type: text
+        value: "true"
+      - name: AuthorizedEntry
+        type: text
+        value: "true"
+      - name: ShowToResident
+        type: text
+        value: "true"
+      - name: Files
+        type: file
+        value: []
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,38 @@
+info:
+  name: displaybysite
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/log/displaybysite"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"search\": null,\r
+
+      \    \"dateRangeId\": 4,\r
+
+      \    \"customStartDate\": null,\r
+
+      \    \"customEndDate\": null,\r
+
+      \    \"paging\": {\r
+
+      \        \"page\": 1,\r
+
+      \        \"perPage\":10\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

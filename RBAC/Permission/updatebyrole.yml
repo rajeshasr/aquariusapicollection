@@ -1,0 +1,50 @@
+info:
+  name: updatebyrole
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/permission/updatebyrole"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"roleId\": 4,\r
+
+      \        \"permissionId\": 101,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"roleId\": 4,\r
+
+      \        \"permissionId\": 102,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"roleId\": 4,\r
+
+      \        \"permissionId\": 103,\r
+
+      \        \"granted\": true\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

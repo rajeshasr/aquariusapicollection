@@ -1,0 +1,46 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitemanagement/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 3,\r
+
+      \    \"siteId\": 1002,\r
+
+      \    \"managementType\": \"Security\",\r
+
+      \    \"companyName\": \"Company Name\",\r
+
+      \    \"address1\": \"Address 1\",\r
+
+      \    \"address2\": \"Address 2\",\r
+
+      \    \"city\": \"City\",\r
+
+      \    \"countryId\": \"1\",\r
+
+      \    \"provinceId\": \"6\",\r
+
+      \    \"provinceName\": \"\",\r
+
+      \    \"postalCode\": \"111222\",\r
+
+      \    \"phone1\": \"11\",\r
+
+      \    \"phone2\": \"222\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

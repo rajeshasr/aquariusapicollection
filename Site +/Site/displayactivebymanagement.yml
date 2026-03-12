@@ -1,0 +1,18 @@
+info:
+  name: displayactivebymanagement
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/site/displayactivebymanagement"
+  body:
+    type: json
+    data: "{\r\n    \"managementId\": 2\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

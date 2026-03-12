@@ -1,0 +1,28 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/projecttheme/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 5,\r
+
+      \    \"themeName\": \"Test Theme 1\",\r
+
+      \    \"themeJson\": \"{ \\\"background\\\": \\\"#000000\\\", \\\"text\\\": \\\"#ffffff\\\" }\",\r
+
+      \    \"primaryColor\": \"#FF0000\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

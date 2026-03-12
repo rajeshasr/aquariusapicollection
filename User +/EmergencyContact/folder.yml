@@ -1,0 +1,7 @@
+info:
+  name: EmergencyContact
+  type: folder
+  seq: 8
+
+request:
+  auth: inherit

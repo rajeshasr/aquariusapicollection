@@ -1,0 +1,18 @@
+info:
+  name: displaydeletedbysite
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitelockertype/displaydeletedbysite"
+  body:
+    type: json
+    data: "{\r\n    \"siteId\": 1001\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

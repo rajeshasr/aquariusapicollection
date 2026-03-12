@@ -1,0 +1,46 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/library/libraryfiles/create"
+  body:
+    type: multipart-form
+    data:
+      - name: folderId
+        type: text
+        value: "9"
+      - name: fileName
+        type: text
+        value: Test File 3
+      - name: fileDesc
+        type: text
+        value: Test Desciption 3
+      - name: fileURL
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/1.jpg
+      - name: fileWebURL
+        type: text
+        value: ""
+      - name: tags
+        type: text
+        value: ""
+      - name: views
+        type: text
+        value: ""
+      - name: expiryDate
+        type: text
+        value: ""
+      - name: createdBy
+        type: text
+        value: "10001"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,109 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/firelog/create"
+  body:
+    type: multipart-form
+    data:
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: RelatedUnitId
+        type: text
+        value: "1"
+      - name: EventDT
+        type: text
+        value: 2026-02-10
+      - name: Title
+        type: text
+        value: "Title New "
+      - name: Details
+        type: text
+        value: Content New
+      - name: AlarmOffDT
+        type: text
+        value: 2026-01-01
+      - name: AlarmLocation
+        type: text
+        value: Location 1
+      - name: AlarmType
+        type: text
+        value: Type 1
+      - name: FireCalledDT
+        type: text
+        value: 2026-01-02
+      - name: FireArrivedDT
+        type: text
+        value: 2026-01-03
+      - name: FireClearanceDT
+        type: text
+        value: 2026-01-04
+      - name: FireDepartureDT
+        type: text
+        value: 2026-01-05
+      - name: AnnouncementDT1
+        type: text
+        value: 2026-01-06
+      - name: AnnouncementDT2
+        type: text
+        value: 2026-01-07
+      - name: AnnouncementDT3
+        type: text
+        value: 2026-01-08
+      - name: FireSafetyPlan
+        type: text
+        value: "true"
+      - name: FireDeptKeys
+        type: text
+        value: "true"
+      - name: ResidentNeedAssistance
+        type: text
+        value: "true"
+      - name: Elevator1
+        type: text
+        value: "true"
+      - name: Elevator2
+        type: text
+        value: "true"
+      - name: Elevator3
+        type: text
+        value: "true"
+      - name: Elevator4
+        type: text
+        value: "true"
+      - name: ResetPullStation
+        type: text
+        value: "true"
+      - name: ResetSmokeDetector
+        type: text
+        value: "true"
+      - name: ResetHeatDetector
+        type: text
+        value: "true"
+      - name: ResetSprinklerHead
+        type: text
+        value: "true"
+      - name: ResetFirePanel
+        type: text
+        value: "true"
+      - name: ResetMagLocks
+        type: text
+        value: "true"
+      - name: ResetElevator
+        type: text
+        value: "true"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/offer-1.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

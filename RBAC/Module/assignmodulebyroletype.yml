@@ -1,0 +1,68 @@
+info:
+  name: assignmodulebyroletype
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/module/assignmodulebyroletype"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"id\": 1,\r
+
+      \        \"assignToSuperAdmin\": true,\r
+
+      \        \"assignToManagementAdmin\": true,\r
+
+      \        \"assignToSiteAdmin\": true,\r
+
+      \        \"assignToStaff\": true,\r
+
+      \        \"assignToResidents\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"id\": 2,\r
+
+      \        \"assignToSuperAdmin\": true,\r
+
+      \        \"assignToManagementAdmin\": true,\r
+
+      \        \"assignToSiteAdmin\": true,\r
+
+      \        \"assignToStaff\": true,\r
+
+      \        \"assignToResidents\": false\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"id\": 3,\r
+
+      \        \"assignToSuperAdmin\": true,\r
+
+      \        \"assignToManagementAdmin\": true,\r
+
+      \        \"assignToSiteAdmin\": true,\r
+
+      \        \"assignToStaff\": false,\r
+
+      \        \"assignToResidents\": false\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

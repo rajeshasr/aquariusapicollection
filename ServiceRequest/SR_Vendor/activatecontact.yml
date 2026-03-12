@@ -1,0 +1,18 @@
+info:
+  name: activatecontact
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/vendor/activatecontact"
+  body:
+    type: json
+    data: "{\r\n    \"id\": 2004\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

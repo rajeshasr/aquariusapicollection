@@ -1,0 +1,26 @@
+info:
+  name: displaybyuser
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/package/displaybyuser"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"userId\": 10001,\r
+
+      \    \"incoming\": null,\r
+
+      \    \"released\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

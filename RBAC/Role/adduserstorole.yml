@@ -1,0 +1,24 @@
+info:
+  name: adduserstorole
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/role/adduserstorole"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"roleId\": 11,\r
+
+      \    \"userIds\": [10001, 10003]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

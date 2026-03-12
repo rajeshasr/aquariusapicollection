@@ -1,0 +1,30 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/siteterms/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Id\": 8,\r
+
+      \    \"ModuleName\": null,\r
+
+      \    \"Title\": \"Test 11 Title\",\r
+
+      \    \"Content\": \"Test 11 Desc\",\r
+
+      \    \"UpdatedBy\": 10001\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

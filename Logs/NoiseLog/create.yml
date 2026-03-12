@@ -1,0 +1,73 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/noiselog/create"
+  body:
+    type: multipart-form
+    data:
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: RelatedUnitId
+        type: text
+        value: "1"
+      - name: EventDT
+        type: text
+        value: 2026-02-10
+      - name: Title
+        type: text
+        value: "Title New "
+      - name: Details
+        type: text
+        value: Content New
+      - name: NoiseTypeId
+        type: text
+        value: "1"
+      - name: NoiseCompFloorId
+        type: text
+        value: "1"
+      - name: NoiseSuspectFloorId
+        type: text
+        value: "1"
+      - name: NoiseDurationId
+        type: text
+        value: "1"
+      - name: NoiseVolumeId
+        type: text
+        value: "1"
+      - name: LengthMinutes
+        type: text
+        value: "30"
+      - name: HomePhone
+        type: text
+        value: "true"
+      - name: WorkPhone
+        type: text
+        value: "true"
+      - name: OtherPhone
+        type: text
+        value: "true"
+      - name: AtDoor
+        type: text
+        value: "true"
+      - name: NoOneHome
+        type: text
+        value: "true"
+      - name: ActionTaken
+        type: text
+        value: "true"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/offer-6.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

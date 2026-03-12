@@ -1,0 +1,36 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitecontact/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 6,\r
+
+      \    \"siteId\": 1002,\r
+
+      \    \"firstName\": \"First Name\",\r
+
+      \    \"lastName\": \"Last Name\",\r
+
+      \    \"title\": \"Title 1\",\r
+
+      \    \"workPhone\": \"111\",\r
+
+      \    \"cellPhone\": \"222\",\r
+
+      \    \"email\": \"test@test.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

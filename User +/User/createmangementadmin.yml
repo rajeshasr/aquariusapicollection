@@ -1,0 +1,50 @@
+info:
+  name: createmangementadmin
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/createmanagementadmin"
+  body:
+    type: json
+    data: "{ \r
+
+      \    \"managementId\": 1,\r
+
+      \    \"roleId\": 3,\r
+
+      \    \"firstName\": \"FirstName\",\r
+
+      \    \"lastName\": \"LastName\",\r
+
+      \    \"nickName\": \"NickName\",\r
+
+      \    \"companyName\": \"CompanyName\",\r
+
+      \    \"dOB\": \"2025-01-01\",\r
+
+      \    \"cellPhone\": \"CellPhone\",\r
+
+      \    \"homePhone\": \"HomePhone\",\r
+
+      \    \"workPhone\": \"WorkPhone\",\r
+
+      \    \"email1\": \"Email1\",\r
+
+      \    \"email2\": \"Email2\",\r
+
+      \r
+
+      \    \"userName\": \"managementadmin1\",\r
+
+      \    \"password\": \"test\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

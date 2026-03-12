@@ -1,0 +1,24 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/fobtype/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 6,\r
+
+      \    \"fobType\": \"Test 22\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

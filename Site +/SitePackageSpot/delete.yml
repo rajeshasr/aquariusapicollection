@@ -1,0 +1,18 @@
+info:
+  name: delete
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitepackagespot/delete"
+  body:
+    type: json
+    data: "{\r\n    \"id\": 4\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

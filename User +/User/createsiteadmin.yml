@@ -1,0 +1,52 @@
+info:
+  name: createsiteadmin
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/createuser"
+  body:
+    type: json
+    data: "{ \r
+
+      \    \"firstName\": \"Rajesh SA\",\r
+
+      \    \"lastName\": \"Gupta\",\r
+
+      \    \"nickName\": \"Gupta\",\r
+
+      \    \"companyName\": \"Genesis Techno Soft\",\r
+
+      \    \"dOB\": \"2025-01-01\",\r
+
+      \    \"cellPhone\": \"CellPhone\",\r
+
+      \    \"homePhone\": \"HomePhone\",\r
+
+      \    \"workPhone\": \"WorkPhone\",\r
+
+      \    \"email1\": \"Email1\",\r
+
+      \    \"email2\": \"Email2\",\r
+
+      \    \"userName\": \"siteadmin101\",\r
+
+      \    \"password\": \"test\",\r
+
+      \    \"isCreatedByManagement\": true,\r
+
+      \    \"userSites\": [1003],\r
+
+      \    \"roleType\": \"SiteAdmin\",\r
+
+      \    \"userRoles\": [4]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

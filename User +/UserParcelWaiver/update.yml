@@ -1,0 +1,34 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/userparcelwaiver/update"
+  body:
+    type: multipart-form
+    data:
+      - name: id
+        type: text
+        value: "6"
+      - name: userId
+        type: text
+        value: "10001"
+      - name: signedAt
+        type: text
+        value: 2025-09-15
+      - name: comments
+        type: text
+        value: Test File 1113
+      - name: attachmentFile
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/1.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

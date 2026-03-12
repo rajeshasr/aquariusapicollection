@@ -1,0 +1,52 @@
+info:
+  name: update
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitegroup/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 8,\r
+
+      \    \"siteId\": 1002,\r
+
+      \    \"groupName\": \"Floor 1\",\r
+
+      \    \"groupDesc\": \"Residents of 1st Floor test\",\r
+
+      \    \"groupType\": \"Residents\",\r
+
+      \    \"users\": [\r
+
+      \        {\r
+
+      \            \"userId\": 10001\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"userId\": 10003\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"userId\": 10004\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: display
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/siteterms/display"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"SiteId\": 1001,\r
+
+      \    \"ModuleName\": \"Packages\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

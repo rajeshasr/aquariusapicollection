@@ -1,0 +1,32 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/fdinstruction/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 4,\r
+
+      \    \"unitId\": 2,\r
+
+      \    \"fdInstructionTypeId\": 3,\r
+
+      \    \"instructionText\": \"Allow contractor access only between 9am–5pm and log ID information.\",\r
+
+      \    \"startDate\": \"2025-02-05\",\r
+
+      \    \"expiryDate\": \"2025-03-15\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

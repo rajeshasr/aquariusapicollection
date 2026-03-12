@@ -1,0 +1,28 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitecourier/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 15,\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"courier\": \"Test 22\",\r
+
+      \    \"colorCode\": \"#FF0000\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

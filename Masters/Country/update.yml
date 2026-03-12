@@ -1,0 +1,26 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/country/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 6,\r
+
+      \    \"countryName\": \"Test Country 22\",\r
+
+      \    \"hasProvinces\": false\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

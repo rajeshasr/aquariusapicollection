@@ -1,0 +1,18 @@
+info:
+  name: displayactivebysite
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/an/sitecategory/displayactivebysite"
+  body:
+    type: json
+    data: "{\r\n    \"siteId\": 1001\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

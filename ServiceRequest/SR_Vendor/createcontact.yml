@@ -1,0 +1,34 @@
+info:
+  name: createcontact
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/vendor/createcontact"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"VendorId\": 1005,\r
+
+      \    \"FirstName\": \"John\",\r
+
+      \    \"LastName\": \"Doe\",\r
+
+      \    \"HomePhone\": \"111111\",\r
+
+      \    \"WorkPhone\": \"222222\",\r
+
+      \    \"CellPhone\": \"999999\",\r
+
+      \    \"Email\": \"john1@test.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

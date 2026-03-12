@@ -1,0 +1,18 @@
+info:
+  name: activate
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/masters/fdinstructiontype/activate"
+  body:
+    type: json
+    data: "{\r\n    \"id\": 3\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

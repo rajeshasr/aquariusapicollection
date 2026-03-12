@@ -1,0 +1,18 @@
+info:
+  name: displaybyunit
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/displaybyunit"
+  body:
+    type: json
+    data: "{\r\n    \"unitid\": 1\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

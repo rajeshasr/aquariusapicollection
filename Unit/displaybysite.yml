@@ -1,0 +1,32 @@
+info:
+  name: displaybysite
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/unit/displaybysite"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"search\": \"\",\r
+
+      \    \"paging\": {\r
+
+      \        \"page\": 1,\r
+
+      \        \"perPage\": 10\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

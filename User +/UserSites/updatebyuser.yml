@@ -1,0 +1,36 @@
+info:
+  name: updatebyuser
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/usersites/updatebyuser"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"userId\": 10001,\r
+
+      \        \"siteId\": 1001\r
+
+      \    },\r
+
+      \   {\r
+
+      \        \"userId\": 10001,\r
+
+      \        \"siteId\": 1004\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

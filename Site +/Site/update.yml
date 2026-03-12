@@ -1,0 +1,42 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/site/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 1006,\r
+
+      \    \"corporationNo\": \"1006\",\r
+
+      \    \"siteName\": \"Site 1006\",\r
+
+      \    \"address1\": \"Address 11\",\r
+
+      \    \"address2\": \"Address 22\",\r
+
+      \    \"city\": \"City\",\r
+
+      \    \"countryId\": null,\r
+
+      \    \"provinceId\": null,\r
+
+      \    \"provinceName\": null,\r
+
+      \    \"postalCode\": \"111111\",\r
+
+      \    \"website\": \"https://website.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

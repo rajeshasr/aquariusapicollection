@@ -1,0 +1,140 @@
+info:
+  name: updatebymanagement
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/rbac/module/updatebymanagement"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 1,\r
+
+      \        \"granted\": false\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 2,\r
+
+      \        \"granted\": false\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 3,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 4,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 5,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 6,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 7,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 8,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 9,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 10,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 11,\r
+
+      \        \"granted\": true\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"managementId\": 2,\r
+
+      \        \"moduleId\": 12,\r
+
+      \        \"granted\": true\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

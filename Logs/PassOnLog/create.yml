@@ -1,0 +1,46 @@
+info:
+  name: create
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/passonlog/create"
+  body:
+    type: multipart-form
+    data:
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: RelatedUnitId
+        type: text
+        value: "1"
+      - name: Title
+        type: text
+        value: "Title New "
+      - name: Details
+        type: text
+        value: Content New
+      - name: IsInternal
+        type: text
+        value: "false"
+      - name: IsHighPriority
+        type: text
+        value: "false"
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/offer-1.png
+      - name: ReviewerUserIds
+        type: text
+        value: "10001"
+      - name: ReviewerUserIds
+        type: text
+        value: "10002"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

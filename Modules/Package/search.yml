@@ -1,0 +1,18 @@
+info:
+  name: search
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/package/displaybysite"
+  body:
+    type: json
+    data: "{\r\n    \"siteId\": 1001\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

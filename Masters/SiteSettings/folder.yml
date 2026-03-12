@@ -1,0 +1,7 @@
+info:
+  name: SiteSettings
+  type: folder
+  seq: 20
+
+request:
+  auth: inherit

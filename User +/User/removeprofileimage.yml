@@ -1,0 +1,26 @@
+info:
+  name: removeprofileimage
+  type: http
+  seq: 24
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/removeprofileimage"
+  body:
+    type: json
+    data: "{\r\n    \"id\": 10001\r\n}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "// Stores the accessToken in an environment or global variable\r
+
+        var accessToken = res.getBody().data.accessToken;\r
+
+        bru.setVar(\"accessToken\", accessToken);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: checkinsitekey
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitekeycheckout/checkinsitekey"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 4,\r
+
+      \    \"returnComments\": \"Test Return 113\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

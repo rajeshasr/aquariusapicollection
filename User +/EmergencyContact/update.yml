@@ -1,0 +1,38 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/emergencycontact/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 2,\r
+
+      \    \"userId\": 10002,\r
+
+      \    \"contactName\": \"Test Name 11\",\r
+
+      \    \"relationship\": \"Friend\",\r
+
+      \    \"cellPhone\": \"111\",\r
+
+      \    \"homePhone\": \"222\",\r
+
+      \    \"workPhone\": \"333\",\r
+
+      \    \"email\": \"test@test.com\",\r
+
+      \    \"comments\": \"Test Comments\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

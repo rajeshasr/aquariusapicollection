@@ -1,0 +1,24 @@
+info:
+  name: displaybyrefno
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/package/displaybyrefno"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"referenceNo\": \"PKG-0005\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,32 @@
+info:
+  name: checkuserregistration
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/checkuserregistration"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"registrationCode\": \"GF59BQ\",\r
+
+      \    \"unitNo\": \"101\"\r
+
+      }"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "// Stores the accessToken in an environment or global variable\r
+
+        var accessToken = res.getBody().data.accessToken;\r
+
+        bru.setVar(\"accessToken\", accessToken);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

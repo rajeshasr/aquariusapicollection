@@ -1,0 +1,106 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/incidentlog/update"
+  body:
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "1"
+      - name: RelatedUnitId
+        type: text
+        value: "1"
+      - name: EventDT
+        type: text
+        value: 2026-02-10
+      - name: Title
+        type: text
+        value: Title New  11
+      - name: Details
+        type: text
+        value: Content New 11
+      - name: IncidentTypeId
+        type: text
+        value: "1"
+      - name: Suspect
+        type: text
+        value: No One
+      - name: ReportedBy
+        type: text
+        value: User
+      - name: PoliceCalled
+        type: text
+        value: "true"
+      - name: PoliceCalledDt
+        type: text
+        value: 2026-02-13
+      - name: PoliceArrivedDt
+        type: text
+        value: 2026-02-14
+      - name: PolicePerson
+        type: text
+        value: PP
+      - name: FireCalled
+        type: text
+        value: "true"
+      - name: FireCalledDt
+        type: text
+        value: 2026-02-13
+      - name: FireArrivedDt
+        type: text
+        value: 2026-02-14
+      - name: FirePerson
+        type: text
+        value: FP
+      - name: AmbulanceCalled
+        type: text
+        value: "true"
+      - name: AmbulanceCalledDt
+        type: text
+        value: 2026-02-13
+      - name: AmbulanceArrivedDt
+        type: text
+        value: 2026-02-14
+      - name: AmbulancePerson
+        type: text
+        value: AP
+      - name: ClientCalled
+        type: text
+        value: "true"
+      - name: ClientCalledDt
+        type: text
+        value: 2026-02-13
+      - name: ClientArrivedDt
+        type: text
+        value: 2026-02-14
+      - name: ClientPerson
+        type: text
+        value: CP
+      - name: PatrolCalled
+        type: text
+        value: "true"
+      - name: PatrolCalledDt
+        type: text
+        value: 2026-02-13
+      - name: PatrolArrivedDt
+        type: text
+        value: 2026-02-14
+      - name: PatrolPerson
+        type: text
+        value: PP
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/Q-3.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

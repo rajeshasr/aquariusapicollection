@@ -1,0 +1,24 @@
+info:
+  name: restore
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/library/libraryfiles/restore"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Id\": 17,\r
+
+      \    \"ArchivedBy\": 10001\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

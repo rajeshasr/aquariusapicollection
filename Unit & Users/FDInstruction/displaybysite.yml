@@ -1,0 +1,36 @@
+info:
+  name: displaybysite
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/fdinstruction/displaybysite"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"search\": \"\",\r
+
+      \    \"fdInstructionTypeId\": null,\r
+
+      \    \"expiryStatus\": \"ALL\",                //ALL, CURRENT, EXPIRED\r
+
+      \    \"paging\": {\r
+
+      \        \"page\": 1,\r
+
+      \        \"perPage\":10\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,52 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sr/vendor/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Id\": 1005,\r
+
+      \    \"SiteID\": 1002,\r
+
+      \    \"CompanyName\": \"Test 88\",\r
+
+      \    \"Address1\": \"Address1\",\r
+
+      \    \"Address2\": \"Address2\",\r
+
+      \    \"City\": \"City\",\r
+
+      \    \"CountryId\": 1,\r
+
+      \    \"ProvinceId\": 1,\r
+
+      \    \"ProvinceName\": \"ProvinceName\",\r
+
+      \    \"PostalCode\": \"PostalCode\",\r
+
+      \    \"Email\": \"Email\",\r
+
+      \    \"Website\": \"Website\",\r
+
+      \    \"HourOfOperation\": \"HourOfOperation\",\r
+
+      \    \"AboutUs\": \"AboutUs\",\r
+
+      \    \"AssignServiceRequest\": true,\r
+
+      \    \"VendorCategories\": [2, 4]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

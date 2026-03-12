@@ -1,0 +1,46 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/package/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"incoming\": true,\r
+
+      \    \"recipientUserId\": 10001,\r
+
+      \    \"droppedByUserId\": null,\r
+
+      \    \"recipientName\": \"Test Name\",\r
+
+      \    \"courierId\": 12,\r
+
+      \    \"courierOthers\": \"\",\r
+
+      \    \"packageTypeId\": 1,\r
+
+      \    \"packageTypeOthers\": \"\",\r
+
+      \    \"trackingNo\": \"112\",\r
+
+      \    \"packageSpotId\": 5,\r
+
+      \    \"isPerishable\": false,\r
+
+      \    \"packageDetails\": \"test\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

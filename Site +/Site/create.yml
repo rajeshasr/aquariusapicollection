@@ -1,0 +1,42 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/site/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"managementId\": 4,\r
+
+      \    \"corporationNo\": \"1006\",\r
+
+      \    \"siteName\": \"Site 1006\",\r
+
+      \    \"address1\": \"Address 1\",\r
+
+      \    \"address2\": \"Address 2\",\r
+
+      \    \"city\": \"City\",\r
+
+      \    \"countryId\": null,\r
+
+      \    \"provinceId\": null,\r
+
+      \    \"provinceName\": null,\r
+
+      \    \"postalCode\": \"111111\",\r
+
+      \    \"website\": \"https://website.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

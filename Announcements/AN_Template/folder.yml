@@ -1,0 +1,7 @@
+info:
+  name: AN_Template
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

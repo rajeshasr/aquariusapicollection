@@ -1,0 +1,18 @@
+info:
+  name: displaybyid
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/site/displaybyid"
+  body:
+    type: json
+    data: "{\r\n    \"id\": 1001\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,58 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/pet/update"
+  body:
+    type: multipart-form
+    data:
+      - name: id
+        type: text
+        value: "3"
+      - name: unitId
+        type: text
+        value: "2"
+      - name: petTypeId
+        type: text
+        value: "1"
+      - name: petName
+        type: text
+        value: Test Pet 1
+      - name: petWeight
+        type: text
+        value: "10"
+      - name: licenseNo
+        type: text
+        value: ""
+      - name: licenseStartDate
+        type: text
+        value: ""
+      - name: licenseExpiryDate
+        type: text
+        value: ""
+      - name: vaccinated
+        type: text
+        value: "true"
+      - name: vaccineDate
+        type: text
+        value: ""
+      - name: description
+        type: text
+        value: ""
+      - name: userId
+        type: text
+        value: "10001"
+      - name: photoFile
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/1.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

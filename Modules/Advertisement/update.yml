@@ -1,0 +1,43 @@
+info:
+  name: update
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/advertisement/update"
+  body:
+    type: multipart-form
+    data:
+      - name: id
+        type: text
+        value: "10038"
+      - name: advtCatId
+        type: text
+        value: "2"
+      - name: title
+        type: text
+        value: Title 11
+      - name: content
+        type: text
+        value: Content 11
+      - name: contactInfo
+        type: text
+        value: ContactInfo 11
+      - name: price
+        type: text
+        value: Price 11
+      - name: expiryDate
+        type: text
+        value: 2025-12-01
+      - name: Files
+        type: file
+        value:
+          - /C:/Users/Genesis/Pictures/1.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,46 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/package/update"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 1,\r
+
+      \    \"incoming\": true,\r
+
+      \    \"recipientUserId\": 10003,\r
+
+      \    \"droppedByUserId\": null,\r
+
+      \    \"recipientName\": \"Test Name 111\",\r
+
+      \    \"courierId\": 12,\r
+
+      \    \"courierOthers\": \"\",\r
+
+      \    \"packageTypeId\": 1,\r
+
+      \    \"packageTypeOthers\": \"\",\r
+
+      \    \"trackingNo\": \"112\",\r
+
+      \    \"packageSpotId\": 5,\r
+
+      \    \"isPerishable\": false,\r
+
+      \    \"packageDetails\": \"test\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

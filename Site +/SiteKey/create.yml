@@ -1,0 +1,30 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/sitekey/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"siteId\": 1001,\r
+
+      \    \"keyName\": \"Test 1\",\r
+
+      \    \"keyDesc\": \"Test 1 Desc\",\r
+
+      \    \"ownerUserId\": null,\r
+
+      \    \"tempKey\": false\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
