@@ -1,0 +1,63 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/event/calendar/update"
+  body:
+    type: json
+    data: |-
+      {
+        "Id": 4,
+        "SiteID": 1001,
+        "CalendarName": "General Calendar 1",
+        "CalendarDesc": "Calendar Desc 1",
+        "ColorCode": "#FF0000",
+        "RoleAccess": [
+          {
+            "RoleId": 5,
+            "CalendarAccessId": 3
+          },
+          {
+            "RoleId": 6,
+            "CalendarAccessId": 3
+          },
+          {
+            "RoleId": 10,
+            "CalendarAccessId": 2
+          },
+          {
+            "RoleId": 11,
+            "CalendarAccessId": 2
+          },
+          {
+            "RoleId": 12,
+            "CalendarAccessId": 2
+          },
+          {
+            "RoleId": 13,
+            "CalendarAccessId": 2
+          },
+          {
+            "RoleId": 14,
+            "CalendarAccessId": 2
+          },
+          {
+            "RoleId": 15,
+            "CalendarAccessId": 2
+          },
+          {
+            "RoleId": 16,
+            "CalendarAccessId": 2
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

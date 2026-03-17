@@ -1,0 +1,42 @@
+info:
+  name: create
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/event/calendar/create"
+  body:
+    type: json
+    data: |-
+      {
+        "SiteID": 1001,
+        "CalendarName": "General Calendar",
+        "CalendarDesc": "Calendar Desc",
+        "ColorCode": "#FF0000",
+        "RoleAccess": [
+          {
+            "RoleId": 5,
+            "CalendarAccessId": 3
+          },
+          {
+            "RoleId": 10,
+            "CalendarAccessId": 2
+          },
+          {
+            "RoleId": 11,
+            "CalendarAccessId": 2
+          },
+          {
+            "RoleId": 12,
+            "CalendarAccessId": 2
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
