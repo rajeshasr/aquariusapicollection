@@ -8,15 +8,12 @@ http:
   url: "{{url}}/api/v1/user/login"
   body:
     type: json
-    data: "{\r
-
-      \    \"username\": \"10005\",\r
-
-      \    \"password\": \"test\",\r
-
-      \    \"deviceId\": \"1234\"\r
-
-      }"
+    data: |-
+      {
+          "username": "10005",
+          "password": "test",
+          "deviceId": "1234"
+      }
 
 runtime:
   scripts:

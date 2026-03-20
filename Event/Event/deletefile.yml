@@ -1,14 +1,14 @@
 info:
-  name: activate
+  name: deletefile
   type: http
   seq: 8
 
 http:
   method: POST
-  url: "{{url}}/api/v1/sr/vendor/activate"
+  url: "{{url}}/api/v1/event/events/deletefile"
   body:
     type: json
-    data: "{\r\n    \"id\": 1005\r\n}"
+    data: "{\r\n    \"id\": 3\r\n}"
   auth: inherit
 
 settings:

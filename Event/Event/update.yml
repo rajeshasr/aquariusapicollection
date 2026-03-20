@@ -1,0 +1,70 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/event/events/update"
+  body:
+    type: multipart-form
+    data:
+      - name: id
+        type: text
+        value: "4"
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: EventCalendarId
+        type: text
+        value: "4"
+      - name: Title
+        type: text
+        value: "Tet Event 1 4 "
+      - name: Description
+        type: text
+        value: Test Event Desc 1 4
+      - name: Location
+        type: text
+        value: Test Location 14
+      - name: StartDateTime
+        type: text
+        value: 2026-03-18
+      - name: EndDateTime
+        type: text
+        value: 2026-03-20
+      - name: DurationTypeId
+        type: text
+        value: "4"
+      - name: IsRecurring
+        type: text
+        value: "false"
+      - name: RRule
+        type: text
+        value: ""
+      - name: RecurrenceEnd
+        type: text
+        value: 2026-03-20
+      - name: IsGuardRequired
+        type: text
+        value: "false"
+      - name: RoleAccessIds
+        type: text
+        value: "5"
+      - name: RoleAccessIds
+        type: text
+        value: "10"
+      - name: RoleAccessIds
+        type: text
+        value: "11"
+      - name: Files
+        type: file
+        value:
+          - C:\Users\Genesis\Pictures\jacket.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

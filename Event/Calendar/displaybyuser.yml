@@ -1,14 +1,14 @@
 info:
-  name: activate
+  name: displaybyuser
   type: http
-  seq: 8
+  seq: 4
 
 http:
   method: POST
-  url: "{{url}}/api/v1/sr/vendor/activate"
+  url: "{{url}}/api/v1/event/calendar/displaybyuser"
   body:
     type: json
-    data: "{\r\n    \"id\": 1005\r\n}"
+    data: ""
   auth: inherit
 
 settings:

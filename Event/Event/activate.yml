@@ -1,14 +1,17 @@
 info:
   name: activate
   type: http
-  seq: 8
+  seq: 6
 
 http:
   method: POST
-  url: "{{url}}/api/v1/sr/vendor/activate"
+  url: "{{url}}/api/v1/event/events/activate"
   body:
     type: json
-    data: "{\r\n    \"id\": 1005\r\n}"
+    data: |-
+      {
+          "id": 2
+      }
   auth: inherit
 
 settings:

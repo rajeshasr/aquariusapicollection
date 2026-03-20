@@ -5,10 +5,13 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/sr/vendor/displaybyid"
+  url: "{{url}}/api/v1/event/calendar/displaybyid"
   body:
     type: json
-    data: "{\r\n    \"Id\": 1005\r\n}"
+    data: |-
+      {
+          "Id": 6
+      }
   auth: inherit
 
 settings:

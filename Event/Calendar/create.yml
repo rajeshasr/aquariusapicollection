@@ -1,7 +1,7 @@
 info:
   name: create
   type: http
-  seq: 4
+  seq: 6
 
 http:
   method: POST
@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "SiteID": 1001,
+        "SiteID": 1002,
         "CalendarName": "General Calendar",
         "CalendarDesc": "Calendar Desc",
         "ColorCode": "#FF0000",

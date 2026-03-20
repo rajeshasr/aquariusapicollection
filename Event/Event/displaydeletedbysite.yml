@@ -1,0 +1,23 @@
+info:
+  name: displaydeletedbysite
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/event/events/displaydeletedbysite"
+  body:
+    type: json
+    data: |-
+      {
+          "CalendarId": -1,
+          "StartDate": "2026-03-10T00:00:00",
+          "EndDate": "2026-03-31T00:00:00"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

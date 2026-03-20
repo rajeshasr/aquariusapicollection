@@ -1,14 +1,17 @@
 info:
-  name: activate
+  name: displayrolesbycalendar
   type: http
-  seq: 8
+  seq: 5
 
 http:
   method: POST
-  url: "{{url}}/api/v1/sr/vendor/activate"
+  url: "{{url}}/api/v1/event/calendar/displayrolesbycalendar"
   body:
     type: json
-    data: "{\r\n    \"id\": 1005\r\n}"
+    data: |-
+      {
+          "Id": 4
+      }
   auth: inherit
 
 settings:
