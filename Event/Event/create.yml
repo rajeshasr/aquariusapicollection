@@ -1,7 +1,7 @@
 info:
   name: create
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: POST
@@ -9,9 +9,6 @@ http:
   body:
     type: multipart-form
     data:
-      - name: SiteId
-        type: text
-        value: "1001"
       - name: EventCalendarId
         type: text
         value: "4"

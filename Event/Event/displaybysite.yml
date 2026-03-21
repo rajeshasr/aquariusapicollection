@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "CalendarId": -1,
+          "CalendarId": [3, 4],
           "StartDate": "2026-03-10T00:00:00",
           "EndDate": "2026-03-31T00:00:00"
       }

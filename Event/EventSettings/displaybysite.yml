@@ -6,12 +6,6 @@ info:
 http:
   method: POST
   url: "{{url}}/api/v1/event/eventsettings/displaybysite"
-  body:
-    type: json
-    data: |-
-      {
-          "siteID": 1001
-      }
   auth: inherit
 
 settings:

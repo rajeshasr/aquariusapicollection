@@ -6,12 +6,6 @@ info:
 http:
   method: POST
   url: "{{url}}/api/v1/event/calendar/displayactivebysite"
-  body:
-    type: json
-    data: |-
-      {
-          "siteId": 1001
-      }
   auth: inherit
 
 settings:

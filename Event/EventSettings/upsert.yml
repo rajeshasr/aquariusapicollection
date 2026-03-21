@@ -10,7 +10,6 @@ http:
     type: json
     data: |-
       {
-          "siteId": 1001,
           "sendEmailDefault": true
       }
   auth: inherit
