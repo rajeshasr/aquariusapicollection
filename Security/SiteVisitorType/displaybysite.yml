@@ -1,11 +1,11 @@
 info:
-  name: displayactivebysite
+  name: displaybysite
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
-  url: "{{url}}/api/v1/siteeventcategory/displayactivebysite"
+  url: "{{url}}/api/v1/sitevisitortype/displaybysite"
   body:
     type: json
     data: "{\r\n    \"siteId\": 1001\r\n}"

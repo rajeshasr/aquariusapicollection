@@ -1,17 +1,16 @@
 info:
-  name: displaybyuser
+  name: activate
   type: http
-  seq: 3
+  seq: 5
 
 http:
   method: POST
-  url: "{{url}}/api/v1/event/events/displaybyuser"
+  url: "{{url}}/api/v1/sitevisitortype/activate"
   body:
     type: json
     data: |-
       {
-        "StartDate": "2026-03-05T00:00:00",
-        "EndDate": "2026-03-07T23:59:59"
+          "id": 4
       }
   auth: inherit
 

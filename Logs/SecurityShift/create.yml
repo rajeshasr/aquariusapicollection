@@ -1,0 +1,25 @@
+info:
+  name: create
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/logs/securityshift/create"
+  body:
+    type: json
+    data: |-
+      {
+        "GuardUserId": 10005,
+        "StartDT": "2026-03-15",
+        "RelievedUserId": "10006",
+        "NextGuardUserId": "10007",
+        "Comments": "Test Comments"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

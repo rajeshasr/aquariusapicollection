@@ -1,7 +1,7 @@
 info:
-  name: SiteTerms
+  name: VisitorParkingSettings
   type: folder
-  seq: 19
+  seq: 3
 
 request:
   auth: inherit

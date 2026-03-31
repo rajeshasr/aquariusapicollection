@@ -1,7 +1,7 @@
 info:
-  name: SiteTerms
+  name: SecurityShift
   type: folder
-  seq: 19
+  seq: 10
 
 request:
   auth: inherit

@@ -14,7 +14,7 @@ http:
         value: "4"
       - name: Title
         type: text
-        value: Tet Event
+        value: Tet Event UTC
       - name: Description
         type: text
         value: Test Event Desc
@@ -23,22 +23,22 @@ http:
         value: Test Location
       - name: StartDateTime
         type: text
-        value: 2026-03-18
+        value: 2026-03-02 18:30:05.0000000
       - name: EndDateTime
         type: text
-        value: 2026-03-20
+        value: 2026-03-02 19:30:05.0000000
       - name: DurationTypeId
         type: text
         value: "4"
       - name: IsRecurring
         type: text
-        value: "false"
+        value: "true"
       - name: RRule
         type: text
-        value: ""
+        value: FREQ=WEEKLY;INTERVAL=1;BYDAY=MO
       - name: RecurrenceEnd
         type: text
-        value: 2026-03-20
+        value: 2026-03-31 18:29:59.9990000
       - name: IsGuardRequired
         type: text
         value: "false"

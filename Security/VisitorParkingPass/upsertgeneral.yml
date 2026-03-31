@@ -1,0 +1,35 @@
+info:
+  name: upsertgeneral
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/visitorparking/parkingsettings/upsertgeneral"
+  body:
+    type: json
+    data: |-
+      {
+        "AllowSelfServe": true,
+        "AllowMultiDayPass": true,
+        "AllowDayVisits": true,
+        "AllowPrint": true,
+        "RequireVisitorName": true,
+        "ParkingPassDownloadType": 1,
+        "DefaultCountryId": 1,
+        "DefaultProvinceId": 1,
+        "NotifyOnIssue": true,
+        "NotifyOnExpiry": true,
+        "NotifyBeforeMinutes": 45,
+        "SendEmailNotice": false,
+        "ParkingPassText": "ParkingPassText",
+        "ResidentPortalText": "ResidentPortalText",
+        "NotifyRoleIds": [5, 10]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

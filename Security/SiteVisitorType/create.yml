@@ -5,18 +5,15 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/siteeventcategory/create"
+  url: "{{url}}/api/v1/sitevisitortype/create"
   body:
     type: json
-    data: "{\r
-
-      \    \"siteId\": 1001,\r
-
-      \    \"catName\": \"Test\",\r
-
-      \    \"colorCode\": \"#FF0000\"\r
-
-      }"
+    data: |-
+      {
+          "siteId": 1001,
+          "visitorType": "Test",
+          "colorCode": "#F9F9F9"
+      }
   auth: inherit
 
 settings:

@@ -1,14 +1,14 @@
 info:
-  name: displaybysite
+  name: displaybyid
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
-  url: "{{url}}/api/v1/siteeventcategory/displaybysite"
+  url: "{{url}}/api/v1/logs/securityshift/displaybyid"
   body:
     type: json
-    data: "{\r\n    \"siteId\": 1001\r\n}"
+    data: "{\r\n    \"Id\": 1\r\n}"
   auth: inherit
 
 settings:

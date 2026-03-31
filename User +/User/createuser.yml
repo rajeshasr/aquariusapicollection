@@ -8,59 +8,34 @@ http:
   url: "{{url}}/api/v1/user/createuser"
   body:
     type: json
-    data: "{ \r
-
-      \    \"unitId\": 13,\r
-
-      \    \"firstName\": \"Test\",\r
-
-      \    \"lastName\": \"Name\",\r
-
-      \    \"nickName\": \"Testing\",\r
-
-      \    \"companyName\": \"\",\r
-
-      \    \"dOB\": \"2025-01-01\",\r
-
-      \    \"cellPhone\": \"99999\",\r
-
-      \    \"homePhone\": \"88888\",\r
-
-      \    \"workPhone\": \"77777\",\r
-
-      \    \"email1\": \"testemail@gmail.com\",\r
-
-      \    \"email2\": \"\",\r
-
-      \    \"emergencyAssistReqd\": false,\r
-
-      \    \"userName\": \"testuser3\",\r
-
-      \    \"password\": \"test\",\r
-
-      \    \"offsiteAddress1\": \"OffsiteAddress1\",\r
-
-      \    \"offsiteAddress2\": \"OffsiteAddress2\",\r
-
-      \    \"offsiteCity\": \"OffsiteCity\",\r
-
-      \    \"offsiteCountryId\": 1,\r
-
-      \    \"offsiteProvinceId\": 7,\r
-
-      \    \"offsiteProvinceName\": null,\r
-
-      \    \"offsitePostalCode\": \"OffsitePostalCode\",\r
-
-      \    \"isCreatedByManagement\": false,\r
-
-      \    \"userSites\": [1001],\r
-
-      \    \"roleType\": \"Staff\",\r
-
-      \    \"userRoles\": [5]\r
-
-      }"
+    data: |-
+      { 
+      //     "unitId": 2,
+          "firstName": "Test",
+          "lastName": "Name",
+          "nickName": "Testing",
+          "companyName": "",
+          "dOB": "2025-01-01",
+          "cellPhone": "99999",
+          "homePhone": "88888",
+          "workPhone": "77777",
+          "email1": "testemail17@gmail.com",
+          "email2": "",
+          "emergencyAssistReqd": false,
+          "userName": "user17",
+          "password": "test",
+          "offsiteAddress1": "OffsiteAddress1",
+          "offsiteAddress2": "OffsiteAddress2",
+          "offsiteCity": "OffsiteCity",
+          "offsiteCountryId": 1,
+          "offsiteProvinceId": 7,
+          "offsiteProvinceName": null,
+          "offsitePostalCode": "OffsitePostalCode",
+          "isCreatedByManagement": false,
+          "userSites": [1001],
+          "roleType": "Staff",
+          "userRoles": [5]
+      }
   auth: inherit
 
 settings:
