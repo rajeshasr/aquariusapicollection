@@ -1,16 +1,16 @@
 info:
-  name: create
+  name: startshift
   type: http
-  seq: 6
+  seq: 3
 
 http:
   method: POST
-  url: "{{url}}/api/v1/logs/securityshift/create"
+  url: "{{url}}/api/v1/logs/securityshift/startshift"
   body:
     type: json
     data: |-
       {
-        "GuardUserId": 10005,
+        "GuardUserId": 10006,
         "StartDT": "2026-03-15",
         "RelievedUserId": "10006",
         "NextGuardUserId": "10007",
