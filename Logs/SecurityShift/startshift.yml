@@ -10,7 +10,6 @@ http:
     type: json
     data: |-
       {
-        "GuardUserId": 10006,
         "StartDT": "2026-03-15",
         "RelievedUserId": "10006",
         "NextGuardUserId": "10007",

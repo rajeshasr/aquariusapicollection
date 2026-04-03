@@ -1,18 +1,17 @@
 info:
-  name: displaybysite
+  name: previewlimits
   type: http
   seq: 1
 
 http:
   method: POST
-  url: "{{url}}/api/v1/event/events/displaybysite"
+  url: "{{url}}/api/v1/visitorparking/parkingpass/previewlimits"
   body:
     type: json
     data: |-
       {
-          "CalendarId": [3, 4],
-          "StartDate": "2026-03-01T00:00:00",
-          "EndDate": "2026-03-31T00:00:00"
+        "UnitId": 1,
+        "LicensePlateNo": "ABC123"
       }
   auth: inherit
 

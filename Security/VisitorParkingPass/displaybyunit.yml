@@ -1,17 +1,16 @@
 info:
-  name: endshift
+  name: displaybyunit
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: POST
-  url: "{{url}}/api/v1/logs/securityshift/endshift"
+  url: "{{url}}/api/v1/visitorparking/parkingpass/displaybyunit"
   body:
     type: json
     data: |-
       {
-        "Id": 6,
-        "endDT": "2026-03-16"
+        "UnitId": 2
       }
   auth: inherit
 

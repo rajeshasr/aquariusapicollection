@@ -1,0 +1,39 @@
+info:
+  name: update
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/visitorparking/parkingpass/update"
+  body:
+    type: json
+    data: |-
+      {
+        "Id": 12,
+        "SiteId": 1001,
+        "UnitId": null,
+        "UserId": null,
+        "VisitorTypeId": 1,
+        "VisitorName": "Test Visitor A",
+        "LicensePlateNo": "ABC111",
+        "StartDT": "2026-04-01 16:00:00",
+        "EndDT": "2026-04-02 15:59:59",
+        "Overnights": 1,
+        "IsOverridden": false,
+        "OverrideEndDT": null,
+        "VehicleMakeId": 1,
+        "Model": "Model 1",
+        "VehicleColorId": 1,
+        "CountryId": 1,
+        "ProvinceId": 1,
+        "ProvinceName": null,
+        "Comments": "Test Comments 1"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
