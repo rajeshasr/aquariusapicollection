@@ -10,7 +10,17 @@ http:
     type: json
     data: |-
       {
-        "UnitId": 2
+        "siteId": 1001,
+        "unitId": 2,
+        "IsOpen": null,
+        "search": null,
+        "dateRangeId": 4,
+        "customStartDate": null,
+        "customEndDate": null,
+        "paging": {
+          "page": 1,
+          "perPage": 10
+        }
       }
   auth: inherit
 

@@ -8,7 +8,20 @@ http:
   url: "{{url}}/api/v1/visitorparking/parkingpass/displaybysite"
   body:
     type: json
-    data: ""
+    data: |-
+      {
+        "siteId": 1001,
+        "unitId": null,
+        "IsOpen": null,
+        "search": null,
+        "dateRangeId": 4,
+        "customStartDate": null,
+        "customEndDate": null,
+        "paging": {
+          "page": 1,
+          "perPage": 10
+        }
+      }
   auth: inherit
 
 settings:

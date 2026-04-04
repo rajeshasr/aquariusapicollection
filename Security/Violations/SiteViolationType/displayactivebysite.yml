@@ -1,19 +1,14 @@
 info:
-  name: displaybyid
+  name: displayactivebysite
   type: http
   seq: 2
 
 http:
   method: POST
-  url: "{{url}}/api/v1/logs/generallog/displaybyid"
+  url: "{{url}}/api/v1/sitevisitortype/displayactivebysite"
   body:
     type: json
-    data: |-
-      {
-          "Id": 8
-          
-
-      }
+    data: "{\r\n    \"siteId\": 1001\r\n}"
   auth: inherit
 
 settings:

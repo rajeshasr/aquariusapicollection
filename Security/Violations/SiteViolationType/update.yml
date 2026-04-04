@@ -1,18 +1,19 @@
 info:
-  name: displaybyid
+  name: update
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: POST
-  url: "{{url}}/api/v1/logs/generallog/displaybyid"
+  url: "{{url}}/api/v1/sitevisitortype/update"
   body:
     type: json
     data: |-
       {
-          "Id": 8
-          
-
+          "id": 5,
+          "siteId": 1001,
+          "visitorType": "Test 1",
+          "colorCode": "#FF0000"
       }
   auth: inherit
 

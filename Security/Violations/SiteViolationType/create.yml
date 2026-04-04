@@ -1,18 +1,18 @@
 info:
-  name: displaybyid
+  name: create
   type: http
-  seq: 2
+  seq: 3
 
 http:
   method: POST
-  url: "{{url}}/api/v1/logs/generallog/displaybyid"
+  url: "{{url}}/api/v1/sitevisitortype/create"
   body:
     type: json
     data: |-
       {
-          "Id": 8
-          
-
+          "siteId": 1001,
+          "visitorType": "Test",
+          "colorCode": "#F9F9F9"
       }
   auth: inherit
 
