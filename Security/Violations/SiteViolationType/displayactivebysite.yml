@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/sitevisitortype/displayactivebysite"
+  url: "{{url}}/api/v1/siteviolationtype/displayactivebysite"
   body:
     type: json
     data: "{\r\n    \"siteId\": 1001\r\n}"

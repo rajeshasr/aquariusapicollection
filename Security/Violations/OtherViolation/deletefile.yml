@@ -1,18 +1,16 @@
 info:
-  name: create
+  name: deletefile
   type: http
-  seq: 3
+  seq: 8
 
 http:
   method: POST
-  url: "{{url}}/api/v1/siteviolationtype/create"
+  url: "{{url}}/api/v1/visitorparking/otherviolation/deletefile"
   body:
     type: json
     data: |-
       {
-          "siteId": 1001,
-          "violationType": "Test",
-          "colorCode": "#F9F9F9"
+          "id": 1
       }
   auth: inherit
 

@@ -1,0 +1,55 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/visitorparking/otherviolation/update"
+  body:
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "1"
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: ViolationDT
+        type: text
+        value: 2026-04-01 16:00:00
+      - name: ViolationTypeId
+        type: text
+        value: "1"
+      - name: ViolationStageId
+        type: text
+        value: "2"
+      - name: ViolationStatusId
+        type: text
+        value: "1"
+      - name: ViolationSubject
+        type: text
+        value: Subject AA
+      - name: ViolationReason
+        type: text
+        value: Violation Reason
+      - name: Files
+        type: file
+        value:
+          - C:\Users\Genesis\Pictures\ai.jpg
+      - name: UnitIds
+        type: text
+        value: "1"
+      - name: UnitIds
+        type: text
+        value: "2"
+      - name: UserIds
+        type: text
+        value: "10011"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

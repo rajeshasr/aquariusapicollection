@@ -1,0 +1,42 @@
+info:
+  name: create
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/visitorparking/parkingviolation/create"
+  body:
+    type: multipart-form
+    data:
+      - name: SiteId
+        type: text
+        value: "1001"
+      - name: LicensePlateNo
+        type: text
+        value: XYZ123
+      - name: ViolationDT
+        type: text
+        value: 2026-04-01 16:00:00
+      - name: ViolationTypeId
+        type: text
+        value: "1"
+      - name: ViolationLocation
+        type: text
+        value: Location AA
+      - name: AutoLiftBanOn
+        type: text
+        value: ""
+      - name: ViolationReason
+        type: text
+        value: Violation Reason
+      - name: Files
+        type: text
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

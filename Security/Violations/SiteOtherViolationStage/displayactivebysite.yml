@@ -1,17 +1,14 @@
 info:
-  name: activate
+  name: displayactivebysite
   type: http
-  seq: 5
+  seq: 2
 
 http:
   method: POST
-  url: "{{url}}/api/v1/siteviolationtype/activate"
+  url: "{{url}}/api/v1/siteotherviolationstage/displayactivebysite"
   body:
     type: json
-    data: |-
-      {
-          "id": 5
-      }
+    data: "{\r\n    \"siteId\": 1001\r\n}"
   auth: inherit
 
 settings:

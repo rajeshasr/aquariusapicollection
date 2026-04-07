@@ -1,0 +1,26 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/siteotherviolationtype/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 2,
+        "siteId": 1001,
+        "violationType": "Test 2",
+        "colorCode": "#FF0000",
+        "NoticeDescription": "NoticeDescription",
+        "Rules": "Rules"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

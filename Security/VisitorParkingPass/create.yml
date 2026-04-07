@@ -11,8 +11,8 @@ http:
     data: |-
       {
         "SiteId": 1001,
-        "UnitId": null,
-        "UserId": null,
+        "UnitId": 3,
+        "UserId": 10010,
         "VisitorTypeId": 1,
         "VisitorName": "Test Visitor A",
         "LicensePlateNo": "ABC111",

@@ -1,18 +1,16 @@
 info:
-  name: create
+  name: displaybylicenseplate
   type: http
-  seq: 3
+  seq: 2
 
 http:
   method: POST
-  url: "{{url}}/api/v1/siteviolationtype/create"
+  url: "{{url}}/api/v1/visitorparking/parkingviolation/displaybylicenseplate"
   body:
     type: json
     data: |-
       {
-          "siteId": 1001,
-          "violationType": "Test",
-          "colorCode": "#F9F9F9"
+        "LicensePlateNo": "ABC123"
       }
   auth: inherit
 

@@ -1,18 +1,16 @@
 info:
-  name: create
+  name: deactivate
   type: http
-  seq: 3
+  seq: 9
 
 http:
   method: POST
-  url: "{{url}}/api/v1/siteviolationtype/create"
+  url: "{{url}}/api/v1/visitorparking/parkingviolation/deactivate"
   body:
     type: json
     data: |-
       {
-          "siteId": 1001,
-          "violationType": "Test",
-          "colorCode": "#F9F9F9"
+          "id": 3
       }
   auth: inherit
 

@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/siteviolationtype/create"
+  url: "{{url}}/api/v1/siteotherviolationstage/create"
   body:
     type: json
     data: |-
       {
           "siteId": 1001,
-          "violationType": "Test",
+          "violationStage": "Test 2",
           "colorCode": "#F9F9F9"
       }
   auth: inherit

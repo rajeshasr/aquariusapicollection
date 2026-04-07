@@ -1,0 +1,31 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/visitorparking/otherviolationupdate/create"
+  body:
+    type: multipart-form
+    data:
+      - name: ViolationId
+        type: text
+        value: "1"
+      - name: CommentText
+        type: text
+        value: Title New 123
+      - name: IsInternal
+        type: text
+        value: "true"
+      - name: Files
+        type: file
+        value:
+          - C:\Users\Genesis\Pictures\1.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

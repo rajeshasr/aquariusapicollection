@@ -17,7 +17,7 @@ http:
         "RequireVisitorName": true,
         "ParkingPassDownloadType": 1,
         "DefaultCountryId": 1,
-        "DefaultProvinceId": 1,
+        "DefaultProvinceId": null,
         "NotifyOnIssue": true,
         "NotifyOnExpiry": true,
         "NotifyBeforeMinutes": 45,

@@ -5,14 +5,14 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/sitevisitortype/update"
+  url: "{{url}}/api/v1/siteviolationtype/update"
   body:
     type: json
     data: |-
       {
           "id": 5,
           "siteId": 1001,
-          "visitorType": "Test 1",
+          "violationType": "Test 1",
           "colorCode": "#FF0000"
       }
   auth: inherit
