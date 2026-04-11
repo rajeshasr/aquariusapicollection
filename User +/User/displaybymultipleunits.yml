@@ -1,14 +1,17 @@
 info:
-  name: displaymanagementadmin
+  name: displaybymultipleunits
   type: http
-  seq: 7
+  seq: 4
 
 http:
   method: POST
-  url: "{{url}}/api/v1/user/displaymanagementadmin"
+  url: "{{url}}/api/v1/user/displaybymultipleunits"
   body:
     type: json
-    data: "{\r\n    \"managementId\": 1\r\n}"
+    data: |-
+      {
+          "UnitIds": [3]
+      }
   auth: inherit
 
 settings:

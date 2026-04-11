@@ -1,7 +1,7 @@
 info:
   name: updateuserregistration
   type: http
-  seq: 15
+  seq: 16
 
 http:
   method: POST
@@ -20,15 +20,15 @@ http:
 
       \    \"cellPhone\": \"111\",\r
 
-      \t\"homePhone\": \"222\",\r
+      \  \"homePhone\": \"222\",\r
 
-      \t\"workPhone\": \"333\",\r
+      \  \"workPhone\": \"333\",\r
 
-      \t\"email1\": \"testemail@gmail.com\",\r
+      \  \"email1\": \"testemail@gmail.com\",\r
 
-      \t\"emergencyAssistReqd\": true,\r
+      \  \"emergencyAssistReqd\": true,\r
 
-      \t\"languageId\": 2,\r
+      \  \"languageId\": 2,\r
 
       \    \"username\": \"10017\",\r
 

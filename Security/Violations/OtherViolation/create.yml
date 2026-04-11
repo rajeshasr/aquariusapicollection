@@ -30,6 +30,9 @@ http:
       - name: ViolationReason
         type: text
         value: Violation Reason
+      - name: IsInternal
+        type: text
+        value: "true"
       - name: Files
         type: file
         value:

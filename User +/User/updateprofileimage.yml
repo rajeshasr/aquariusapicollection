@@ -1,7 +1,7 @@
 info:
   name: updateprofileimage
   type: http
-  seq: 23
+  seq: 24
 
 http:
   method: POST
