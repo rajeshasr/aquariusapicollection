@@ -1,11 +1,11 @@
 info:
-  name: displaybysite
+  name: displaybyunit
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: POST
-  url: "{{url}}/api/v1/visitorparking/parkingpass/displaybysite"
+  url: "{{url}}/api/v1/visitorparking/parkingpass/displaybyunit"
   body:
     type: json
     data: |-
@@ -13,9 +13,6 @@ http:
         "unitId": 2,
         "IsOpen": null,
         "search": null,
-        "dateRangeId": 4,
-        "customStartDate": null,
-        "customEndDate": null,
         "paging": {
           "page": 1,
           "perPage": 10

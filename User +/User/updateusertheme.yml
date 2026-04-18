@@ -1,7 +1,7 @@
 info:
   name: updateusertheme
   type: http
-  seq: 23
+  seq: 20
 
 http:
   method: POST

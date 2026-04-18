@@ -1,7 +1,7 @@
 info:
   name: create
   type: http
-  seq: 6
+  seq: 7
 
 http:
   method: POST
@@ -11,13 +11,13 @@ http:
     data: |-
       {
         "SiteId": 1001,
-        "UnitId": 3,
+        "UnitId": 2,
         "UserId": 10010,
         "VisitorTypeId": 1,
         "VisitorName": "Test Visitor A",
-        "LicensePlateNo": "ABC111",
-        "StartDT": "2026-04-01 16:00:00",
-        "EndDT": "2026-04-02 15:59:59",
+        "LicensePlateNo": "ABC3",
+        "StartDT": "2026-04-19T07:57:55Z",
+        "EndDT": "2026-04-20T07:57:55Z",
         "Overnights": 1,
         "IsOverridden": false,
         "OverrideEndDT": null,

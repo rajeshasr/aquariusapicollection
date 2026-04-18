@@ -1,7 +1,7 @@
 info:
   name: activate
   type: http
-  seq: 7
+  seq: 8
 
 http:
   method: POST
@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "id": 1
+          "id": 14
       }
   auth: inherit
 

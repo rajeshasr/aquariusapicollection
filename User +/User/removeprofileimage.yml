@@ -1,7 +1,7 @@
 info:
   name: removeprofileimage
   type: http
-  seq: 25
+  seq: 22
 
 http:
   method: POST

@@ -8,39 +8,24 @@ http:
   url: "{{url}}/api/v1/user/createmanagementadmin"
   body:
     type: json
-    data: "{ \r
+    data: |-
+      { 
+          "managementId": 1007,
+          "roleId": 3,
+          "firstName": "FirstName",
+          "lastName": "LastName",
+          "nickName": "NickName",
+          "companyName": "CompanyName",
+          "dOB": "2025-01-01",
+          "cellPhone": "CellPhone",
+          "homePhone": "HomePhone",
+          "workPhone": "WorkPhone",
+          "email1": "Email1",
+          "email2": "Email2",
 
-      \    \"managementId\": 1,\r
-
-      \    \"roleId\": 3,\r
-
-      \    \"firstName\": \"FirstName\",\r
-
-      \    \"lastName\": \"LastName\",\r
-
-      \    \"nickName\": \"NickName\",\r
-
-      \    \"companyName\": \"CompanyName\",\r
-
-      \    \"dOB\": \"2025-01-01\",\r
-
-      \    \"cellPhone\": \"CellPhone\",\r
-
-      \    \"homePhone\": \"HomePhone\",\r
-
-      \    \"workPhone\": \"WorkPhone\",\r
-
-      \    \"email1\": \"Email1\",\r
-
-      \    \"email2\": \"Email2\",\r
-
-      \r
-
-      \    \"userName\": \"managementadmin1\",\r
-
-      \    \"password\": \"test\"\r
-
-      }"
+          "userName": "managementadmin1",
+          "password": "test"
+      }
   auth: inherit
 
 settings:

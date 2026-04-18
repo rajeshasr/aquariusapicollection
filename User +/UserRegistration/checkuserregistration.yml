@@ -1,14 +1,18 @@
 info:
-  name: checkusername
+  name: checkuserregistration
   type: http
-  seq: 15
+  seq: 14
 
 http:
   method: POST
-  url: "{{url}}/api/v1/user/checkusername"
+  url: "{{url}}/api/v1/user/checkuserregistration"
   body:
     type: json
-    data: "{\r\n    \"username\": \"test\"\r\n}"
+    data: |-
+      {
+          "registrationCode": "F05D2F",
+          "unitNo": "102"
+      }
 
 runtime:
   scripts:

@@ -1,7 +1,7 @@
 info:
   name: update
   type: http
-  seq: 10
+  seq: 11
 
 http:
   method: POST
@@ -10,21 +10,21 @@ http:
     type: json
     data: |-
       {
-        "Id": 12,
+        "Id": 14,
         "SiteId": 1001,
-        "UnitId": null,
-        "UserId": null,
+        "UnitId": 3,
+        "UserId": 10010,
         "VisitorTypeId": 1,
         "VisitorName": "Test Visitor A",
-        "LicensePlateNo": "ABC111",
+        "LicensePlateNo": "ABC123",
         "StartDT": "2026-04-01 16:00:00",
         "EndDT": "2026-04-02 15:59:59",
         "Overnights": 1,
         "IsOverridden": false,
         "OverrideEndDT": null,
         "VehicleMakeId": 1,
-        "Model": "Model 1",
-        "VehicleColorId": 1,
+        "Model": "Model 2",
+        "VehicleColorId":2,
         "CountryId": 1,
         "ProvinceId": 1,
         "ProvinceName": null,

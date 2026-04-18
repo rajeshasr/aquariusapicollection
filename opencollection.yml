@@ -18,6 +18,8 @@ request:
   headers:
     - name: X-Site-Id
       value: "1001"
+    - name: X-Management-Id
+      value: "1"
   auth:
     type: bearer
     token: "{{accessToken}}"

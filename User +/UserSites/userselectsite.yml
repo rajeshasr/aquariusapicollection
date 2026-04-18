@@ -8,13 +8,11 @@ http:
   url: "{{url}}/api/v1/usersites/userselectsite"
   body:
     type: json
-    data: "{\r
-
-      \    \"userId\": 10005,\r
-
-      \    \"siteId\": 1001\r
-
-      }"
+    data: |-
+      {
+          "userId": 10005,
+          "siteId": 1001
+      }
   auth: inherit
 
 settings:

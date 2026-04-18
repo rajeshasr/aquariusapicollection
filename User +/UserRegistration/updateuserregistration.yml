@@ -1,0 +1,40 @@
+info:
+  name: updateuserregistration
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/updateuserregistration"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 10015,
+        "firstName": "Ajay",
+        "lastName": "Sharma",
+        "nickName": "NickName",
+        "email1": "testemail15@gmail.com",
+        "emergencyAssistReqd": true,
+        "username": "10015",
+        "password": "test",
+        "cellPhone": "111",
+        "homePhone": "222",
+        "workPhone": "333",
+        "languageId": 2
+      }
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "// Stores the accessToken in an environment or global variable\r
+
+        var accessToken = res.getBody().data.accessToken;\r
+
+        bru.setVar(\"accessToken\", accessToken);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

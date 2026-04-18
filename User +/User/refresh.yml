@@ -1,7 +1,7 @@
 info:
   name: refresh
   type: http
-  seq: 22
+  seq: 19
 
 http:
   method: POST

@@ -8,7 +8,10 @@ http:
   url: "{{url}}/api/v1/user/displaymanagementadmin"
   body:
     type: json
-    data: "{\r\n    \"managementId\": 1\r\n}"
+    data: |-
+      {
+          "managementId": 1
+      }
   auth: inherit
 
 settings:
