@@ -1,0 +1,84 @@
+info:
+  name: savequestions
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/survey/savequestions"
+  body:
+    type: json
+    data: |-
+      {
+        "surveyId": 1,
+        "questionsJson": [
+          {
+            "id": 1,
+            "questionTypeId": 1,
+            "questionText": "What is your feedback on Project?",
+            "isRequired": true,
+            "priority": 1,
+            "options": []
+          },
+          {
+            "id": 2,
+            "questionTypeId": 2,
+            "questionText": "Rate our service",
+            "isRequired": true,
+            "priority": 2,
+            "options": [
+              {
+                "id": 1,
+                "optionText": "Excellent",
+                "priority": 1
+              },
+              {
+                "id": 2,
+                "optionText": "Good",
+                "priority": 2
+              },
+              {
+                "id": 3,
+                "optionText": "Average",
+                "priority": 3
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "questionTypeId": 3,
+            "questionText": "Which amenities do you use?",
+            "isRequired": false,
+            "priority": 3,
+            "options": [
+              {
+                "id": 4,
+                "optionText": "Gym",
+                "priority": 1
+              },
+              {
+                "id": 5,
+                "optionText": "Pool",
+                "priority": 2
+              },
+              {
+                "id": 6,
+                "optionText": "Parking",
+                "priority": 3
+              },
+              {
+                "id": 0,
+                "optionText": "Rest Room",
+                "priority": 4
+              }
+            ]
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: displaybysite
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/survey/displaybysite"
+  body:
+    type: json
+    data: |-
+      {
+          "siteId": 1001,
+          "search": null,
+          "paging": {
+              "page": 1,
+              "perPage":10
+          }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

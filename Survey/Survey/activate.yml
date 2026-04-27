@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/visitorparking/parkingviolation/activate"
+  url: "{{url}}/api/v1/survey/activate"
   body:
     type: json
     data: |-
       {
-          "id": 5
+          "id": 1
       }
   auth: inherit
 

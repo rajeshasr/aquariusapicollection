@@ -1,16 +1,16 @@
 info:
-  name: activate
+  name: displaybyid
   type: http
-  seq: 8
+  seq: 3
 
 http:
   method: POST
-  url: "{{url}}/api/v1/visitorparking/parkingviolation/activate"
+  url: "{{url}}/api/v1/survey/displaybyid"
   body:
     type: json
     data: |-
       {
-          "id": 5
+        "Id": 1
       }
   auth: inherit
 

@@ -11,13 +11,13 @@ http:
     data: |-
       {
         "SiteId": 1001,
-        "UnitId": 2,
+        "UnitId": 1,
         "UserId": 10010,
         "VisitorTypeId": 1,
         "VisitorName": "Test Visitor A",
-        "LicensePlateNo": "ABC3",
-        "StartDT": "2026-04-19T07:57:55Z",
-        "EndDT": "2026-04-20T07:57:55Z",
+        "LicensePlateNo": "ABC123",
+        "StartDT": "2026-04-26T11:00:00Z",
+        "EndDT": "2026-04-27T11:00:00Z",
         "Overnights": 1,
         "IsOverridden": false,
         "OverrideEndDT": null,

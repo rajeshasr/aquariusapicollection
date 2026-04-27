@@ -1,0 +1,29 @@
+info:
+  name: update
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/survey/create"
+  body:
+    type: json
+    data: |-
+      {
+        ""
+        "SiteId": 1001,
+        "Title": "Survey Title Demo 2",
+        "Description": "Survey Description",
+        "EmailSubject": "Survey Email Subject",
+        "EstimatedTimeMins": 15,
+        "StatusId": 1,
+        "ExpiresAt": "2026-05-26T00:00:00Z",
+        "SurveyRoleIds": [5, 10]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,16 +1,16 @@
 info:
-  name: activate
+  name: clone
   type: http
-  seq: 8
+  seq: 7
 
 http:
   method: POST
-  url: "{{url}}/api/v1/visitorparking/parkingviolation/activate"
+  url: "{{url}}/api/v1/survey/clone"
   body:
     type: json
     data: |-
       {
-          "id": 5
+        "id": 1
       }
   auth: inherit
 
