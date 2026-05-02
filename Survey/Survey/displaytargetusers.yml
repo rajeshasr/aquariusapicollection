@@ -1,0 +1,26 @@
+info:
+  name: displaytargetusers
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/survey/displaytargetusers"
+  body:
+    type: json
+    data: |-
+      {
+        "Id": 21,
+        "IsCompleted": null,
+        "paging": {
+          "page": 1,
+          "perPage": 5
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

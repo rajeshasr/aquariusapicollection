@@ -1,0 +1,26 @@
+info:
+  name: displaytextanswers
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/survey/displaytextanswers"
+  body:
+    type: json
+    data: |-
+      {
+        "SurveyId": 21,
+        "QuestionId": 41,
+        "paging": {
+          "page": 1,
+          "perPage": 10
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

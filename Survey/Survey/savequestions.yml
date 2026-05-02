@@ -10,10 +10,10 @@ http:
     type: json
     data: |-
       {
-        "surveyId": 1,
+        "surveyId": 21,
         "questionsJson": [
           {
-            "id": 1,
+            "id": 0,
             "questionTypeId": 1,
             "questionText": "What is your feedback on Project?",
             "isRequired": true,
@@ -21,48 +21,48 @@ http:
             "options": []
           },
           {
-            "id": 2,
+            "id": 0,
             "questionTypeId": 2,
             "questionText": "Rate our service",
             "isRequired": true,
             "priority": 2,
             "options": [
               {
-                "id": 1,
+                "id": 0,
                 "optionText": "Excellent",
                 "priority": 1
               },
               {
-                "id": 2,
+                "id": 0,
                 "optionText": "Good",
                 "priority": 2
               },
               {
-                "id": 3,
+                "id": 0,
                 "optionText": "Average",
                 "priority": 3
               }
             ]
           },
           {
-            "id": 3,
+            "id": 0,
             "questionTypeId": 3,
             "questionText": "Which amenities do you use?",
             "isRequired": false,
             "priority": 3,
             "options": [
               {
-                "id": 4,
+                "id": 0,
                 "optionText": "Gym",
                 "priority": 1
               },
               {
-                "id": 5,
+                "id": 0,
                 "optionText": "Pool",
                 "priority": 2
               },
               {
-                "id": 6,
+                "id": 0,
                 "optionText": "Parking",
                 "priority": 3
               },
@@ -72,7 +72,15 @@ http:
                 "priority": 4
               }
             ]
-          }
+          },
+          {
+            "id": 0,
+            "questionTypeId": 4,
+            "questionText": "Rate cleanliness",
+            "isRequired": true,
+            "priority": 4,
+            "ratingMax": 5
+      }
         ]
       }
   auth: inherit

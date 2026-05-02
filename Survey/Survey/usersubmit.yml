@@ -1,0 +1,40 @@
+info:
+  name: usersubmit
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/survey/usersubmit"
+  body:
+    type: json
+    data: |-
+      {
+        "surveyId": 21,
+        "startedAt": "2026-05-01T00:00:00Z",
+        "answers": [
+          {
+            "questionId": 41,
+            "answerText": "In Progress"
+          },
+          {
+            "questionId": 42,
+            "answerOptionIds": [2]
+          },
+          {
+            "questionId": 43,
+            "answerOptionIds": [1, 2]
+          },
+          {
+            "questionId": 44,
+            "answerRating": 4
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,16 +1,16 @@
 info:
-  name: clone
+  name: displaysurveyresponse
   type: http
-  seq: 7
+  seq: 14
 
 http:
   method: POST
-  url: "{{url}}/api/v1/survey/clone"
+  url: "{{url}}/api/v1/survey/displaysurveyresponse"
   body:
     type: json
     data: |-
       {
-        "id": 19
+        "Id": 21
       }
   auth: inherit
 

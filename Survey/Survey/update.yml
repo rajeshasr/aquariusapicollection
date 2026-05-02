@@ -5,20 +5,19 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/survey/create"
+  url: "{{url}}/api/v1/survey/update"
   body:
     type: json
     data: |-
       {
-        ""
+        "id": 15,
         "SiteId": 1001,
-        "Title": "Survey Title Demo 2",
+        "Title": "Survey Title Demo 33",
         "Description": "Survey Description",
         "EmailSubject": "Survey Email Subject",
         "EstimatedTimeMins": 15,
-        "StatusId": 1,
         "ExpiresAt": "2026-05-26T00:00:00Z",
-        "SurveyRoleIds": [5, 10]
+        "SurveyRoleIds": [5, 10, 11]
       }
   auth: inherit
 

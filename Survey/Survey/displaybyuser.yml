@@ -6,6 +6,16 @@ info:
 http:
   method: POST
   url: "{{url}}/api/v1/survey/displaybyuser"
+  body:
+    type: json
+    data: |-
+      {
+          "userStatus": "New",//"Completed", //null,
+          "paging": {
+              "page": 1,
+              "perPage":10
+          }
+      }
   auth: inherit
 
 settings:

@@ -11,13 +11,12 @@ http:
     data: |-
       {
         "SiteId": 1001,
-        "Title": "Survey Title Demo 2",
-        "Description": "Survey Description",
-        "EmailSubject": "Survey Email Subject",
-        "EstimatedTimeMins": 15,
-        "StatusId": 1,
-        "ExpiresAt": "2026-05-26T00:00:00Z",
-        "SurveyRoleIds": [5, 10]
+        "Title": "Software Survey",
+        "Description": "Survey Software Testing",
+        "EmailSubject": "Survey Software Subject",
+        "EstimatedTimeMins": 5,
+        "ExpiresAt": null, //"2026-05-26T00:00:00Z",
+        "SurveyRoleIds": [5, 10, 11]
       }
   auth: inherit
 
