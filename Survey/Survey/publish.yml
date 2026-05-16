@@ -1,7 +1,7 @@
 info:
   name: publish
   type: http
-  seq: 11
+  seq: 12
 
 http:
   method: POST
@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "id": 21
+          "id": 25
       }
   auth: inherit
 

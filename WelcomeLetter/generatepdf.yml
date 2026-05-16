@@ -1,0 +1,25 @@
+info:
+  name: generatepdf
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/notification/welcomeletter/generatepdf"
+  body:
+    type: json
+    data: |-
+      {
+        "roleIds": [5, 10],
+        "unitIds": [],
+        "userIds": [],
+        "isEmail": true,
+        "isPrint": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

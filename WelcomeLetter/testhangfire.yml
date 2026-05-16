@@ -1,11 +1,11 @@
 info:
-  name: displaybysite
+  name: testhangfire
   type: http
-  seq: 1
+  seq: 5
 
 http:
   method: POST
-  url: "{{url}}/api/v1/an/template/displaybysite"
+  url: "{{url}}/api/v1/notification/welcomeletter/testhangfire"
   auth: inherit
 
 settings:

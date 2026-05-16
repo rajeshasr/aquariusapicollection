@@ -1,19 +1,20 @@
 info:
-  name: create
+  name: generate
   type: http
   seq: 3
 
 http:
   method: POST
-  url: "{{url}}/api/v1/an/template/create"
+  url: "{{url}}/api/v1/notification/welcomeletter/generate"
   body:
     type: json
     data: |-
       {
-        "TemplateName": "Announcement Template",
-        "Title": "Announcement",
-        "Body": "Body",
-        "CoverImageURL": "url"
+        "roleIds": [5],
+        "unitIds": [],
+        "userIds": [],
+        "isEmail": true,
+        "isPrint": true
       }
   auth: inherit
 

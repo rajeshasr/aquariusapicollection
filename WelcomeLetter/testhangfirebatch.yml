@@ -1,11 +1,11 @@
 info:
-  name: displaybysite
+  name: testhangfirebatch
   type: http
-  seq: 1
+  seq: 6
 
 http:
   method: POST
-  url: "{{url}}/api/v1/an/template/displaybysite"
+  url: "{{url}}/api/v1/notification/welcomeletter/testhangfirebatch"
   auth: inherit
 
 settings:

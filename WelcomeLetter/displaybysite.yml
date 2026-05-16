@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/an/template/displaybysite"
+  url: "{{url}}/api/v1/notification/welcomeletter/displaybysite"
   auth: inherit
 
 settings:

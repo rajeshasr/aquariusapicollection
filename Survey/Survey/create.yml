@@ -1,7 +1,7 @@
 info:
   name: create
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: POST
@@ -11,12 +11,12 @@ http:
     data: |-
       {
         "SiteId": 1001,
-        "Title": "Software Survey",
+        "Title": "Aquarius Survey",
         "Description": "Survey Software Testing",
         "EmailSubject": "Survey Software Subject",
-        "EstimatedTimeMins": 5,
-        "ExpiresAt": null, //"2026-05-26T00:00:00Z",
-        "SurveyRoleIds": [5, 10, 11]
+        "EstimatedTimeMins": 10,
+        "ExpiresAt": "2026-05-26T00:00:00Z",
+        "SurveyRoleIds": [5, 10]
       }
   auth: inherit
 

@@ -1,16 +1,20 @@
 info:
-  name: displaysurveyresponse
+  name: displaysummary
   type: http
-  seq: 15
+  seq: 1
 
 http:
   method: POST
-  url: "{{url}}/api/v1/survey/displaysurveyresponse"
+  url: "{{url}}/api/v1/survey/displaysummary"
   body:
     type: json
     data: |-
       {
-        "Id": 25
+          "search": null,
+          "paging": {
+              "page": 1,
+              "perPage":10
+          }
       }
   auth: inherit
 

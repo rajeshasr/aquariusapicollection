@@ -1,0 +1,25 @@
+info:
+  name: previewrecipients
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/notification/welcomeletter/previewrecipients"
+  body:
+    type: json
+    data: |-
+      {
+        "roleIds": [5, 10],
+        "unitIds": [],
+      //   "userIds": [10005, 10006, 10007],
+        "isEmail": true,
+        "isPrint": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

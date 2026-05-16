@@ -1,16 +1,17 @@
 info:
-  name: displaysurveyresponse
+  name: displayuserresponse
   type: http
-  seq: 15
+  seq: 17
 
 http:
   method: POST
-  url: "{{url}}/api/v1/survey/displaysurveyresponse"
+  url: "{{url}}/api/v1/survey/displayuserresponse"
   body:
     type: json
     data: |-
       {
-        "Id": 25
+        "Id": 25,
+        "UserId": 10005
       }
   auth: inherit
 

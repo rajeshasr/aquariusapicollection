@@ -1,20 +1,19 @@
 info:
-  name: displaybysite
+  name: sendtouser
   type: http
   seq: 2
 
 http:
   method: POST
-  url: "{{url}}/api/v1/survey/displaybysite"
+  url: "{{url}}/api/v1/notification/sendtouser"
   body:
     type: json
     data: |-
       {
-          "search": null,
-          "paging": {
-              "page": 1,
-              "perPage":10
-          }
+        "id": 1,
+        "userId": 10005,
+        "title": "Maintenance",
+        "message": "Water supply will stop at 5 PM"
       }
   auth: inherit
 
