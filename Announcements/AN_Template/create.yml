@@ -7,14 +7,21 @@ http:
   method: POST
   url: "{{url}}/api/v1/an/template/create"
   body:
-    type: json
-    data: |-
-      {
-        "TemplateName": "Announcement Template 3",
-        "Title": "Announcement 3",
-        "Body": "Body 3",
-        "CoverImageURL": "url 3"
-      }
+    type: multipart-form
+    data:
+      - name: TemplateName
+        type: text
+        value: Test Template 12
+      - name: Title
+        type: text
+        value: Test Title 12
+      - name: Body
+        type: text
+        value: Test Body
+      - name: CoverImageFile
+        type: file
+        value:
+          - C:\Users\Genesis\Pictures\1.jpg
   auth: inherit
 
 settings:

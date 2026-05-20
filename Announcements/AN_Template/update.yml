@@ -7,15 +7,24 @@ http:
   method: POST
   url: "{{url}}/api/v1/an/template/update"
   body:
-    type: json
-    data: |-
-      {
-        "id": 2,
-        "TemplateName": "Announcement Template 22",
-        "Title": "Announcement 22",
-        "Body": "Body 22",
-        "CoverImageURL": "url 22"
-      }
+    type: multipart-form
+    data:
+      - name: Id
+        type: text
+        value: "4"
+      - name: TemplateName
+        type: text
+        value: Test Template 11
+      - name: Title
+        type: text
+        value: Test Title 11
+      - name: Body
+        type: text
+        value: Test Body 112
+      - name: CoverImageFile
+        type: file
+        value:
+          - C:\Users\Genesis\Pictures\GaneshChaturthi.jpg
   auth: inherit
 
 settings:
