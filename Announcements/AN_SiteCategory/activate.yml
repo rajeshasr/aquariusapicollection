@@ -8,7 +8,10 @@ http:
   url: "{{url}}/api/v1/an/sitecategory/activate"
   body:
     type: json
-    data: "{\r\n    \"id\": 2\r\n}"
+    data: |-
+      {
+          "id": 1
+      }
   auth: inherit
 
 settings:

@@ -8,15 +8,11 @@ http:
   url: "{{url}}/api/v1/an/sitecategory/create"
   body:
     type: json
-    data: "{\r
-
-      \    \"SiteID\": 1001,\r
-
-      \    \"CatName\": \"Safety Alerts\",\r
-
-      \    \"ColorCode\": \"#00FF00\"\r
-
-      }"
+    data: |-
+      {
+          "CatName": "Test",
+          "ColorCode": "#00FF00"
+      }
   auth: inherit
 
 settings:

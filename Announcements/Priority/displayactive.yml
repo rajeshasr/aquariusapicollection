@@ -1,17 +1,11 @@
 info:
-  name: activate
+  name: displayactive
   type: http
-  seq: 5
+  seq: 6
 
 http:
   method: POST
-  url: "{{url}}/api/v1/an/template/activate"
-  body:
-    type: json
-    data: |-
-      {
-          "id": 1
-      }
+  url: "{{url}}/api/v1/an/priority/displayactive"
   auth: inherit
 
 settings:

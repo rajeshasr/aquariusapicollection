@@ -5,20 +5,17 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v1/an/sitecategory/update"
+  url: "{{url}}/api/v1/an/template/update"
   body:
     type: json
-    data: "{\r
-
-      \    \"id\": 2,\r
-
-      \    \"siteId\": 1001,\r
-
-      \    \"CatName\": \"Safety Alerts 1\",\r
-
-      \    \"ColorCode\": \"#00FF00\"\r
-
-      }"
+    data: |-
+      {
+        "id": 2,
+        "TemplateName": "Announcement Template 22",
+        "Title": "Announcement 22",
+        "Body": "Body 22",
+        "CoverImageURL": "url 22"
+      }
   auth: inherit
 
 settings:

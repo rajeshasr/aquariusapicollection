@@ -12,9 +12,7 @@ http:
       {
         "roleIds": [5, 10],
         "unitIds": [],
-      //   "userIds": [10005, 10006, 10007],
-        "isEmail": true,
-        "isPrint": true
+        "userIds": [10005, 10006, 10007]
       }
   auth: inherit
 

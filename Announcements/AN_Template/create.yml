@@ -10,10 +10,10 @@ http:
     type: json
     data: |-
       {
-        "TemplateName": "Announcement Template",
-        "Title": "Announcement",
-        "Body": "Body",
-        "CoverImageURL": "url"
+        "TemplateName": "Announcement Template 3",
+        "Title": "Announcement 3",
+        "Body": "Body 3",
+        "CoverImageURL": "url 3"
       }
   auth: inherit
 

@@ -10,23 +10,23 @@ http:
     type: json
     data: |-
       {
-        "surveyId": 25,
+        "surveyId": 26,
         "startedAt": "2026-05-15T00:00:00Z",
         "answers": [
           {
-            "questionId": 53,
+            "questionId": 57,
             "answerText": "In Progress"
           },
           {
-            "questionId": 54,
-            "answerOptionIds": [2]
+            "questionId": 58,
+            "answerOptionIds": [125]
           },
           {
-            "questionId": 55,
-            "answerOptionIds": [1, 2, 4]
+            "questionId": 59,
+            "answerOptionIds": [128, 129]
           },
           {
-            "questionId": 56,
+            "questionId": 60,
             "answerRating": 4
           }
         ]

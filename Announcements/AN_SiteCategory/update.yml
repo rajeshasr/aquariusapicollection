@@ -8,17 +8,12 @@ http:
   url: "{{url}}/api/v1/an/sitecategory/update"
   body:
     type: json
-    data: "{\r
-
-      \    \"id\": 2,\r
-
-      \    \"siteId\": 1001,\r
-
-      \    \"CatName\": \"Safety Alerts 1\",\r
-
-      \    \"ColorCode\": \"#00FF00\"\r
-
-      }"
+    data: |-
+      {
+          "id": 8,
+          "CatName": "Test 1123",
+          "ColorCode": "#00FF00"
+      }
   auth: inherit
 
 settings:
